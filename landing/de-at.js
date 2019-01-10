@@ -106,15 +106,18 @@ export default {
             error: {
                 text: "Der Kreditantrag konnte nicht erstellt werden.",
                 message: {
-                    text: `Bitte kontaktieren Sie unseren Kundenservice. Wir helfen Ihnen gerne weiter.`
+                    title: "Um Ihnen weiterzuhelfen",
+                    text: `Bitte kontaktieren Sie unseren Kundenservice unter ${ContactInfo.PHONE}. Wir helfen Ihnen gerne weiter.`
                 }
             },
             pending: {
                 text: "Senden"
             },
             success: {
-                text: "Vielen Dank für Ihre Bewerbung",
-                verify_button: "Abschicken"
+                text: "Vielen Dank für Ihre Kreditanfrage!",
+                verify_button: "Abschicken",
+                resend_otp_button: "I habe keinen Verifizierungscode erhalten. Neuen Code anfordern.",
+                resend_otp_triggered: "Ein neuer Verifizierungscode wurde verschickt.",
             }
         },
         error: {
@@ -197,6 +200,7 @@ export default {
             }
         },
         label: {
+            confirm_terms: "Ich bestätige:",
             austrian_citizen_one_year:
         "Ich habe meinen Hauptwohnsitz seit mindestens 1 Jahr in Österreich",
             low_income_partner: "Partner mit niedrigem Einkommen",
@@ -399,49 +403,13 @@ export default {
             per_du: {
                 title_academic: "Optional",
                 first_name:
-                "Bitte achte darauf, dass die Angabe mit deinem Reisepass bzw. Personalausweis übereinstimmt.",
-                last_name:
-                "Bitte achte darauf, dass die Angabe mit deinem Reisepass bzw. Personalausweis übereinstimmt.",
-                email:
-                "Bitte gib deine E-Mail Adresse an. Wir brauchen diese, um dich darüber informieren zu können, wenn neue Kreditangebote eingelangt sind.",
-                phone: "Bitte gib deine Mobilnummer an. Wir brauchen diese für die Zusendung von Zugangscodes.",
-                city: "Bitte gib deinen gemeldeten Hauptwohnsitz an.",
-                iban:
-                "Deinen IBAN findest du auf deiner Bankomatkarte. Die Angabe ist für die Überweisung des Kredits nötig.",
-                vehicles_amount:
-                "Bitte gib die Anzahl deiner privaten Autos an. Dienstwägen oder gewerbliche Fahrzeuge zählen nicht dazu.",
-                monthly_expenses:
-                "Bitte gib deine monatlichen Verpflichtungen aus Konsumkrediten (nicht Immobilienkrediten!), Leasing, Ratenzahlung etc. an.",
-                child_support_no_children:
-                "Kinder, für die Familienbeihilfe bezogen wird, z.B. unter 18 Jahren oder studierend.",
-                alimony_cost: "Bitte gib an, wieviel Unterhalt du pro Monat zahlst.",
-                employment: {
-                    since: "Bitte gib an, wann dein aktuelles Arbeitsverhältnis begonnen hat.",
-                    city: "Bitte gib hier die Adresse deines aktuellen Arbeitgebers an.",
-                    monthly_income: {
-                        salary:
-                            "Bitte gib an, wie hoch dein letztes Netto-Gehalt lt. Gehaltsabrechnung war (ohne Spesen!).",
-                        special_salary: "Sonderzahlungen sind z.B. Bonus, Urlaubs- oder Weihnachtsgeld.",
-                    },
-                },
-                accommodation: {
-                    size: "Bitte geben Sie die Größe Ihrer Wohnfläche in m2 an (als Zahl).",
-                    monthly_cost:
-                    "Bitte geben Sie an, wie hoch Ihre monatliche Miete und/oder Kreditrate für Ihre Wohnung/Haus ist.",
-                    additional_expenses: "Die monatlichen Betriebskosten inkludieren Strom, Heizung, Müll, etc.",
-                },
-            },
-            /* NON-strict honorific wordings */
-            per_sie: {
-                title_academic: "Optional",
-                first_name:
                 "Bitte achten Sie darauf, dass die Angabe mit Ihrem Reisepass bzw. Personalausweis übereinstimmt.",
                 last_name:
                 "Bitte achten Sie darauf, dass die Angabe mit Ihrem Reisepass bzw. Personalausweis übereinstimmt.",
                 email:
                 "Bitte geben Sie Ihre E-Mail Adresse an. Wir brauchen diese, um Sie darüber informieren zu können, wenn neue Kreditangebote eingelangt sind.",
-                phone: "Bitte geben Sie Ihre  Mobilnummer an. Wir brauchen diese für die Zusendung von Zugangscodes.",
-                city: "Bitte geben Sie Ihren gemeldeten Hauptwohnsitz an.",
+                phone: "Bitte geben Sie Ihre Mobilnummer an. Wir brauchen diese für die Zusendung von Verifizierungscodes.",
+                city: "Bitte geben Sie Ihre gemeldeten Hauptwohnsitz an.",
                 iban:
                 "Ihren IBAN finden Sie auf Ihrer Bankomatkarte. Die Angabe ist für die Überweisung des Kredits nötig.",
                 vehicles_amount:
@@ -464,6 +432,42 @@ export default {
                     size: "Bitte geben Sie die Größe Ihrer Wohnfläche in m2 an (als Zahl).",
                     monthly_cost:
                     "Bitte geben Sie an, wie hoch Ihre monatliche Miete und/oder Kreditrate für Ihre Wohnung/Haus ist.",
+                    additional_expenses: "Die monatlichen Betriebskosten inkludieren Strom, Heizung, Müll, etc.",
+                },
+            },
+            /* NON-strict honorific wordings */
+            per_sie: {
+                title_academic: "Optional",
+                first_name:
+                "Bitte achte darauf, dass die Angabe mit deinem Reisepass bzw. Personalausweis übereinstimmt.",
+                last_name:
+                "Bitte achte darauf, dass die Angabe mit deinem Reisepass bzw. Personalausweis übereinstimmt.",
+                email:
+                "Bitte gib deine E-Mail Adresse an. Wir brauchen diese, um dich darüber informieren zu können, wenn neue Kreditangebote eingelangt sind.",
+                phone: "Bitte gib deine Mobilnummer an. Wir brauchen diese für die Zusendung von Verifizierungscodes.",
+                city: "Bitte gib deinen gemeldeten Hauptwohnsitz an.",
+                iban:
+                "Deinen IBAN findest du auf deiner Bankomatkarte. Die Angabe ist für die Überweisung des Kredits nötig.",
+                vehicles_amount:
+                "Bitte gib die Anzahl deiner privaten Autos an. Dienstwägen oder gewerbliche Fahrzeuge zählen nicht dazu.",
+                monthly_expenses:
+                "Bitte gib deine monatlichen Verpflichtungen aus Konsumkrediten (nicht Immobilienkrediten!), Leasing, Ratenzahlung etc. an.",
+                child_support_no_children:
+                "Kinder, für die Familienbeihilfe bezogen wird, z.B. unter 18 Jahren oder studierend.",
+                alimony_cost: "Bitte gib an, wieviel Unterhalt du pro Monat zahlst.",
+                employment: {
+                    since: "Bitte gib an, wann dein aktuelles Arbeitsverhältnis begonnen hat.",
+                    city: "Bitte gib hier die Adresse deines aktuellen Arbeitgebers an.",
+                    monthly_income: {
+                        salary:
+                            "Bitte gib an, wie hoch dein letztes Netto-Gehalt lt. Gehaltsabrechnung war (ohne Spesen!).",
+                        special_salary: "Sonderzahlungen sind z.B. Bonus, Urlaubs- oder Weihnachtsgeld.",
+                    },
+                },
+                accommodation: {
+                    size: "Bitte gib die Größe deiner Wohnfläche in m2 an (als Zahl).",
+                    monthly_cost:
+                    "Bitte gib an, wie hoch deine monatliche Miete und/oder Kreditrate für deine Wohnung/dein Haus ist.",
                     additional_expenses: "Die monatlichen Betriebskosten inkludieren Strom, Heizung, Müll, etc.",
                 },
             },
