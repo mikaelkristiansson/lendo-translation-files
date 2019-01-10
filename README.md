@@ -1,0 +1,1 @@
+# lendo-translation-files
