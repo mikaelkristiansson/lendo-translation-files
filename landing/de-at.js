@@ -44,7 +44,7 @@ export default {
         lendo: "Über Lendo",
         lendo_pages: {
             about: "Lendo",
-            partners: "Partnerbanken"
+            partners: "Bankpartner"
         },
         legal: "Rechtliches",
         legal_pages: {
@@ -85,11 +85,11 @@ export default {
         collect: {
             title: "Lendo vergleicht",
             text:
-        "Lendo stellt die Angebote übersichtlich in einer Tabelle dar sodass Sie sie leicht miteinander vergleichen können."
+        "Lendo stellt die Angebote übersichtlich in einer Tabelle dar, sodass Sie diese leicht miteinander vergleichen können."
         },
         compare: {
             title: "Und Sie wählen aus!",
-            text: `Wählen Sie das Angebot aus, das am besten zu Ihnen passt. Wenn Sie Hilfe benötigen, erreichen Sie uns unter ${
+            text: `Wählen Sie das Angebot, das am besten zu Ihnen passt. Wenn Sie Hilfe benötigen, erreichen Sie uns unter ${
                 ContactInfo.PHONE
             }`
         }
@@ -116,7 +116,7 @@ export default {
             success: {
                 text: "Vielen Dank für Ihre Kreditanfrage!",
                 verify_button: "Abschicken",
-                resend_otp_button: "I habe keinen Verifizierungscode erhalten. Neuen Code anfordern.",
+                resend_otp_button: "Ich habe keinen Verifizierungscode erhalten. Neuen Code anfordern.",
                 resend_otp_triggered: "Ein neuer Verifizierungscode wurde verschickt.",
             }
         },
@@ -125,10 +125,10 @@ export default {
                 required: "Vorname ist erforderlich"
             },
             last_name: {
-                required: "Nachnamen ist erforderlich"
+                required: "Nachname ist erforderlich"
             },
             basic_terms: {
-                required: "Zustimmen"
+                required: "Bitte zustimmen"
             },
             email: {
                 required: "E-Mail ist erforderlich",
@@ -175,7 +175,7 @@ export default {
                     invalid: "Monat ist ungültig",
                 },
                 min_one_year: {
-                    invalid: "Beginn des Arbeitsverhältnis muss vor mindestens einem Jahr sein"
+                    invalid: "Hauptwohnsitz muss seit mindestens einem Jahr in Österreich sein"
                 }
             },
             accommodation: {
@@ -189,7 +189,7 @@ export default {
                     name: "Name des Arbeitgebers ist erforderlich",
                     since: {
                         three_months: {
-                            invalid: "Beginn des Arbeitsverhältnis muss vor mindestens drei Monate sein"
+                            invalid: "Arbeitsverhältnis muss vor mindestens drei Monaten begonnen haben"
                         }
                     }
                 },
@@ -238,7 +238,7 @@ export default {
                 company: {
                     name: "Arbeitgeber",
                     street_address: "Straße (Arbeitgeber)",
-                    zip_code: "Postleitzahl (Arbeitgeber)",
+                    zip_code: "PLZ (Arbeitgeber)",
                     street_number: "Hausnummer",
                     city: "Ort (Arbeitgeber)"
                 },
@@ -264,8 +264,8 @@ export default {
                 other: "Anderer privater Verwendungszweck"
             },
             title_honorific: {
-                strict: "Per Du",
-                non_strict: "Per Sie"
+                strict: "Per Sie",
+                non_strict: "Per Du"
             },
             employment_type: {
                 employee: "Angestellter",
@@ -400,7 +400,7 @@ export default {
         },
         help: {
             /* Strict honorific wordings */
-            per_du: {
+            per_sie: {
                 title_academic: "Optional",
                 first_name:
                 "Bitte achten Sie darauf, dass die Angabe mit Ihrem Reisepass bzw. Personalausweis übereinstimmt.",
@@ -436,7 +436,7 @@ export default {
                 },
             },
             /* NON-strict honorific wordings */
-            per_sie: {
+            per_du: {
                 title_academic: "Optional",
                 first_name:
                 "Bitte achte darauf, dass die Angabe mit deinem Reisepass bzw. Personalausweis übereinstimmt.",
