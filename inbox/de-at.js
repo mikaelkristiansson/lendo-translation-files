@@ -42,7 +42,7 @@ export default {
         otp_placeholder: 'Verifizierungscode',
         verify_otp_button: 'Überprüfen',
         submit_button: 'Anmelden',
-        resend_otp_button: 'Ich habe keinen Code erhalten',
+        resend_otp_button: 'Neuen Verifizierungscode senden',
     },
     application: {
         applied_amount: 'Beantragter Kreditbetrag',
