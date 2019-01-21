@@ -42,6 +42,7 @@ export default {
         otp_placeholder: 'Verifizierungscode',
         verify_otp_button: 'Überprüfen',
         submit_button: 'Anmelden',
+        resend_otp_button: 'Ich habe keinen Code erhalten',
     },
     application: {
         applied_amount: 'Beantragter Kreditbetrag',
@@ -181,8 +182,18 @@ export default {
         additional_reqs_from_bank: 'Zusätzliche Anforderungen der Bank',
         complete_application: {
             header: 'Deinen Antrag fertigstellen',
-            text:
-                <p>Durch Klicken auf „Antrag fertigstellen“ erkläre ich mich damit einverstanden, dass jenes Kreditinstitut, mit dem ich in Verhandlungen zum Abschluss eines Kreditvertrages trete, folgende Daten an LENDO übermittelt: Vorname, Nachname, Geburtsdatum, ausgezahlte Kreditsumme. Dies gilt sowohl für den Fall, dass es zum Abschluss eines Kreditvertrages kommt, als auch für den Fall, dass die Verhandlungen nicht zu einem Abschluss führen. <br /><br /> Auf Basis Ihrer Angaben ist das Angebot bis heute 24:00 Uhr verbindlich. Danach kann sich die Kondition ändern. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur einmal durchgeführt werden kann.</p>,
+            text: (
+                <p>
+                    Durch Klicken auf „Antrag fertigstellen“ erkläre ich mich damit einverstanden, dass jenes
+                    Kreditinstitut, mit dem ich in Verhandlungen zum Abschluss eines Kreditvertrages trete, folgende
+                    Daten an LENDO übermittelt: Vorname, Nachname, Geburtsdatum, ausgezahlte Kreditsumme. Dies gilt
+                    sowohl für den Fall, dass es zum Abschluss eines Kreditvertrages kommt, als auch für den Fall, dass
+                    die Verhandlungen nicht zu einem Abschluss führen. <br />
+                    <br /> Auf Basis Ihrer Angaben ist das Angebot bis heute 24:00 Uhr verbindlich. Danach kann sich die
+                    Kondition ändern. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur
+                    einmal durchgeführt werden kann.
+                </p>
+            ),
             button: 'Antrag fertigstellen',
         },
         fill_out_information_below: 'Beantworte noch die folgenden Fragen, um den Antrag fertigzustellen.',
@@ -230,6 +241,7 @@ export default {
     errors: {
         'Did not get any jwt token cookie': 'Du bist nicht mehr angemeldet',
         unknown: 'Ein unbekannter Fehler ist aufgetreten',
+        unauthed: 'You are unauthorized to access the page, please try log in again',
     },
     validation: {
         required: 'Dies ist ein Pflicht-Feld',
@@ -240,9 +252,11 @@ export default {
         min_lenth: ({ minLength }) => `Needs to be at least ${minLength} characters`,
     },
     consent: {
-        files_title: 'Percy Jens [4:09 PM]\n' +
+        files_title: 'Kreditvermittlungsvollmacht',
+        files_text:
             'Bitte lesen Sie den Kreditvermittlungsauftrag durch und stimmen Sie diesem zu. Wir brauchen Ihre Zustimmung, um in Ihrem Auftrag Kreditangebote für Sie von Banken einholen zu können. Für das Einholen der Angebote entstehen Ihnen keinerlei Kosten oder Verpflichtungen.',
         ready_consent_button: 'Ich stimme zu',
+        creating_validation: 'Creating validation',
     },
     other: {
         loan_tip_header: 'Tipps',
