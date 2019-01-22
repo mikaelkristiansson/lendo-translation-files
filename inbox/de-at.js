@@ -90,10 +90,10 @@ export default {
         },
         interest: {
             effective: 'Effektivzinssatz',
-            nominal: 'Nomineller Zinssatz',
+            nominal: 'Sollzinssatz',
             short: {
                 effective: 'Eff.zinssatz',
-                nominal: 'Nom. Zinssatz',
+                nominal: 'Sollzinssatz',
             },
         },
         private_loan: 'Private loan',
@@ -124,7 +124,7 @@ export default {
         no_offer: {
             per_du: {
                 header: 'Du hast leider keine Kreditangebote bekommen',
-                desc: 'Bitte wende dich an den Lendo Kundenservice, wir helfen Ihnen gerne weiter.',
+                desc: 'Bitte wende dich an den Lendo Kundenservice, wir helfen dir gerne weiter.',
             },
             per_sie: {
                 header: 'Sie haben leider keine Kreditangebote bekommen',
@@ -168,7 +168,7 @@ export default {
                 `Du erhältst den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
             ],
             acceptance_url: ({ bankName }) => [
-                `You need to follow the link below and fill in required data at ${bankName} to proceed with your application.`,
+                `Um den Antrag fertigzustellen, klicken Sie auf das untenstehende Feld und folgen Sie den Antragsprozessschritten. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur einmal durchgeführt werden kann.`,
             ],
         },
         finalize_application_button: 'Kreditanfrage fertigstellen',
@@ -190,8 +190,7 @@ export default {
                     sowohl für den Fall, dass es zum Abschluss eines Kreditvertrages kommt, als auch für den Fall, dass
                     die Verhandlungen nicht zu einem Abschluss führen. <br />
                     <br /> Auf Basis Ihrer Angaben ist das Angebot bis heute 24:00 Uhr verbindlich. Danach kann sich die
-                    Kondition ändern. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur
-                    einmal durchgeführt werden kann.
+                    Kondition ändern. 
                 </p>
             ),
             button: 'Antrag fertigstellen',
@@ -254,7 +253,7 @@ export default {
     consent: {
         files_title: 'Kreditvermittlungsvollmacht',
         files_text:
-            'Bitte lesen Sie den Kreditvermittlungsauftrag durch und stimmen Sie diesem zu. Wir brauchen Ihre Zustimmung, um in Ihrem Auftrag Kreditangebote für Sie von Banken einholen zu können. Für das Einholen der Angebote entstehen Ihnen keinerlei Kosten oder Verpflichtungen.',
+            'Bitte lesen Sie den Kreditvermittlungsauftrag durch und stimmen Sie diesem zu. Wir brauchen Ihre Zustimmung, um in Ihrem Auftrag Kreditangebote für Sie von Banken einholen zu können. Für das Einholen der Angebote entstehen Ihnen keinerlei Kosten oder Verpflichtungen. Um die Kreditvermittlungsvollmacht zu speichern klicken Sie bitte auf den Button.',
         ready_consent_button: 'Ich stimme zu',
         creating_validation: 'Creating validation',
     },
