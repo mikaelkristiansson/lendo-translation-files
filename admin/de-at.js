@@ -3,17 +3,17 @@ export default {
     // If translation is missing from any of the translation sub object, the translator will look in general
     general: {
         amount: 'Betrag',
-        loan_type: 'Art des Darlehens',
+        loan_type: 'Art des Kredites',
         amortize_length: 'Laufzeit',
-        loan_purpose: 'Darlehen Zweck',
-        nominal_interest_rate: 'Nomineller Zinssatz',
-        effective_interest_rate: 'Effektiver Zinssatz',
+        loan_purpose: 'Kreditzweck',
+        nominal_interest_rate: 'Sollzinssatz',
+        effective_interest_rate: 'Effektivzinssatz',
         monthly_cost: 'monatliche Rate',
-        administration_fee: 'Verwaltungsgebühr',
+        administration_fee: 'Bearbeitungsgsgebühr',
         direct_debit_fee: 'Kontoführungsgebühr',
         setup_fee: 'Einrichtungsgebühr',
         monthly_cost_last: 'letzte monatliche Rate',
-        monthly_cost_first: 'Monatliche Kosten im ersten Monat',
+        monthly_cost_first: 'Monatliche Rate',
         repayment_type: 'Rückzahlungsart',
         address: 'Adresse',
         accepted_at: 'Akzeptiert um',
@@ -22,17 +22,17 @@ export default {
         employment: 'Beschäftigung',
         personal_information: 'Persönliche Informationen',
         full_name: 'Vollständiger Name',
-        politically_exposed_person: 'Politisch exponierte person',
+        politically_exposed_person: 'Politisch exponierte Person',
         email: 'Email',
         phone: 'Telefon',
         first_name: 'Vorname',
         last_name: 'Nachname',
         main_applicant: 'Hauptantragsteller',
-        time_left: 'Übrige Zeit',
+        time_left: 'Restzeit',
         product_type: 'Produktart',
         offer: 'Angebot',
         integration: 'Integration',
-        created_at: 'Hergestellt in',
+        created_at: 'Erstellt am',
         status: 'Status',
         birth_date: 'Geburtsdatum',
         years: ({ number }) => `${number} %{Jahr|Jahre}`,
@@ -46,13 +46,13 @@ export default {
     },
     treat: {
         revision_history: 'Versionsgeschichte',
-        application_created: 'Anwendung erstellt am',
+        application_created: 'Antrag erstellt am',
         form: {
             form_prefilled_from_settings: 'Das Formular ist bereits mit den Produkteinstellungen gefüllt', // The form is prefilled with the product's settings
             withdraw_before_new_offer:
-                'Das aktive Angebot muss zurückgezogen werden, bevor ein neues Angebot abgegeben wird',
+                'Das aktive Angebot muss zurückgezogen werden, bevor ein neues Angebot abgegeben werden kann',
             application_denied_cannot_leave_offer:
-                'Sie haben die Bewerbung bereits abgelehnt und können der aktuellen Überarbeitung keine neue Antwort geben',
+                'Sie haben den Antrag bereits abgelehnt und können die aktuelle Überarbeitung nicht ändern',
             loan_details: {
                 finalize_acceptance_url: 'URL für die letzten Schritte',
                 header: 'Kreditdetails' // Loan details
@@ -65,41 +65,41 @@ export default {
                 header: ''
             },
             button: {
-                leave_offer: 'Angebot verlassen',
-                deny: 'Verweigern'
+                leave_offer: 'Abgeben',
+                deny: 'Ablehnen'
             }
         },
         steps: {
             untreated: {
-                title: 'Unbehandelt',
-                desc: 'Die aktuelle Version benötigt eine Antwort'
+                title: 'Unbearbeitet',
+                desc: 'Der aktuelle Antrag wurde noch nicht bearbeitet'
             },
             offer_given: {
-                title: 'Angebot gegeben',
-                desc: 'Der Bewerber hat Ihr Angebot erhalten'
+                title: 'Angebot abgegeben',
+                desc: 'Der Antragsteller hat Ihr Angebot erhalten'
             },
             user_accepted: {
                 title: 'Benutzer akzeptiert',
-                desc: 'Der Nutzer hat Ihr Angebot angenommen'
+                desc: 'Der Kunde hat Ihr Angebot angenommen'
             },
             bill_of_debt_sent: {
-                title: 'Rechnung verschickt',
-                desc: 'Sie haben den gesendeten Schuldschein markiert'
+                title: 'Vertrag verschickt',
+                desc: 'Der Vertrag wurde verschickt'
             },
             paid_out: {
-                title: 'Darlehen ausgezahlt',
-                desc: 'Das Darlehen wurde ausgezahlt'
+                title: 'Kredit ausgezahlt',
+                desc: 'Der Kredit wurde ausgezahlt'
             },
             application_denied: {
-                title: 'Bewerbung abgelehnt',
-                desc: 'Die Anwendung wurde abgelehnt'
+                title: 'Antrag abgelehnt',
+                desc: 'Der Antrag wurde abgelehnt'
             }
         }
     },
     application_form: {
         button: {
             apply: {
-                initial: 'Bewerben Sie sich jetzt - kostenlos!',
+                initial: 'Kreditantrag stellen',
                 next_step: 'Weiter',
                 finish: 'Fertig!'
             }
@@ -163,8 +163,8 @@ export default {
                 other: 'Anderer privater Verwendungszweck'
             },
             title_honorific: {
-                strict: 'Per Du',
-                non_strict: 'Per Sie'
+                strict: 'Per Sie',
+                non_strict: 'Per Du'
             },
             employment_type: {
                 employee: 'Angestellter',
@@ -250,16 +250,16 @@ export default {
             }
         },
         placeholder: {
-            title_academic: 'Fakultativer akademischer titel',
-            first_name: 'Ihr vorname',
-            last_name: 'Ihr nachname',
-            email: 'Deine emailadresse',
-            phone: 'Deine telefonnummer',
-            zip_code: 'Deine postleitzahl',
-            city: 'Deine ort',
-            street_address: 'Deine straße',
-            street_number: 'Deine hausnummer',
-            iban: 'Ihre IBAN',
+            title_academic: 'Akademischer Titel',
+            first_name: 'Vorname',
+            last_name: 'Nachname',
+            email: 'Email ',
+            phone: 'Telefonnummer',
+            zip_code: 'Postleitzahl',
+            city: 'Ort',
+            street_address: 'Straße',
+            street_number: 'Hausnummer',
+            iban: 'IBAN',
             alimony_cost: '€€€',
             monthly_expenses: '€€€',
             extra_monthly_income: '€€€',
@@ -273,10 +273,10 @@ export default {
                 monthly_income: {
                     salary: ['Letztes Monat', 'Vorletztes Monat', 'Vor drei Monaten']
                 },
-                street_address: 'Die Adresse Ihres Arbeitgebers',
-                street_number: 'Hausnummer',
-                zip_code: 'Ihre Arbeitgeber Postleitzahl',
-                city: 'Ihre arbeitgeberstadt'
+                street_address: 'Adresse des Arbeitgebers',
+                street_number: 'Hausnummer des Arbeitgebers',
+                zip_code: 'PLZ des Arbeitgebers',
+                city: 'Ort des Arbeitgebers'
             },
             accommodation: {
                 size: 'Quadratmeter',
