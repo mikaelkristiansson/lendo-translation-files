@@ -146,7 +146,75 @@ export default {
             id_copy: 'Copy of your passport or drivers license',
         },
     },
+    details_page: {
+        complete_application: {
+            header: 'Deinen Antrag fertigstellen',
+            button: 'Antrag fertigstellen',
+        },
+        edge_cases: {
+            unicredit: {
+                // REMOVE IF NOT NEEDED ANY MORE (SAME AS banks_austria)
+                header: 'Ihr Ablebensschutz ist bereits inkludiert.',
+                text: (
+                    <p>
+                        Bei Ihrem Kredit ist das Risiko Ihres Ablebens in Höhe des aushaftenden Kreditbetrages (inkl.
+                        Zinsen) automatisch mitversichert. Eine Auszahlung des Kredites ist nur möglich wenn Sie
+                        folgende Frage mit einem &quot;<b>NEIN</b>&quot; beantworten können: Standen Sie in den letzten
+                        fünf Jahren in ärztlicher Behandlung wegen Schlaganfall, Multipler Sklerose, Diabetes Mellitus
+                        Typ I, Leberzirrhose, Erkrankungen des Herzens (jedoch nicht Bluthochdruck und/oder erhöhte
+                        Blutfette), eines Krebsleidens oder stehen Sie derzeit bzw. standen Sie jemals in ärztlicher
+                        Behandlung wegen Dialyse, Organtransplantation, Aids oder Schizophrenie? Die Richtigkeit dieser
+                        Gesundheitserklärung bestätigen Sie wenn Sie Ihre Kreditunterlagen unterschreiben. Ausnahmen zum
+                        Versicherungsschutz finden Sie hier.
+                    </p>
+                ),
+            },
+            bank_austria: {
+                header: 'Ihr Ablebensschutz ist bereits inkludiert.',
+                text: (
+                    <p>
+                        Bei Ihrem Kredit ist das Risiko Ihres Ablebens in Höhe des aushaftenden Kreditbetrages (inkl.
+                        Zinsen) automatisch mitversichert. Eine Auszahlung des Kredites ist nur möglich wenn Sie
+                        folgende Frage mit einem &quot;<b>NEIN</b>&quot; beantworten können: Standen Sie in den letzten
+                        fünf Jahren in ärztlicher Behandlung wegen Schlaganfall, Multipler Sklerose, Diabetes Mellitus
+                        Typ I, Leberzirrhose, Erkrankungen des Herzens (jedoch nicht Bluthochdruck und/oder erhöhte
+                        Blutfette), eines Krebsleidens oder stehen Sie derzeit bzw. standen Sie jemals in ärztlicher
+                        Behandlung wegen Dialyse, Organtransplantation, Aids oder Schizophrenie? Die Richtigkeit dieser
+                        Gesundheitserklärung bestätigen Sie wenn Sie Ihre Kreditunterlagen unterschreiben. Ausnahmen zum
+                        Versicherungsschutz finden Sie hier.
+                    </p>
+                ),
+            },
+            erste_bank: {
+                header: 'Ihr Ablebensschutz ist bereits inkludiert.',
+                text: (
+                    <p>
+                        Durch Klicken auf &bdquo;Antrag fertigstellen&rdquo; erkläre ich mich damit einverstanden, dass
+                        jenes Kreditinstitut, mit dem ich in Verhandlungen zum Abschluss eines Kreditvertrages trete,
+                        folgende Daten an LENDO übermittelt: Vorname, Nachname, Geburtsdatum, ausgezahlte Kreditsumme.
+                        Dies gilt sowohl für den Fall, dass es zum Abschluss eines Kreditvertrages kommt, als auch für
+                        den Fall, dass die Verhandlungen nicht zu einem Abschluss führen. <br />
+                        <br /> Auf Basis Ihrer Angaben ist das Angebot bis heute 24:00 Uhr verbindlich. Danach kann sich
+                        die Kondition ändern. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen
+                        nur einmal durchgeführt werden kann.
+                    </p>
+                ),
+            },
+        },
+    },
     requirement: {
+        file_input: {
+            browse_files: 'Drag & Drop your files or <span class="filepond--label-action"> Browse </span>',
+            file_to_large: 'File is too large',
+            max_file_size: 'Maximum file size is {filesize}',
+        },
+        payslip: {
+            label: ({ number }) => `Payment slip #${number}`,
+            add_field_button: 'Add field input',
+        },
+        copy_of_id: {
+            label: 'Copy of ID',
+        },
         signing_method: {
             label: 'Art der Legitimierung',
             placeholder: 'Wählen Sie bitte eine Art der Legitimierung',
@@ -180,21 +248,6 @@ export default {
         my_offers: 'Meine Angebote',
         my_information: 'Meine Informationen',
         additional_reqs_from_bank: 'Zusätzliche Anforderungen der Bank',
-        complete_application: {
-            header: 'Deinen Antrag fertigstellen',
-            text: (
-                <p>
-                    Durch Klicken auf „Antrag fertigstellen“ erkläre ich mich damit einverstanden, dass jenes
-                    Kreditinstitut, mit dem ich in Verhandlungen zum Abschluss eines Kreditvertrages trete, folgende
-                    Daten an LENDO übermittelt: Vorname, Nachname, Geburtsdatum, ausgezahlte Kreditsumme. Dies gilt
-                    sowohl für den Fall, dass es zum Abschluss eines Kreditvertrages kommt, als auch für den Fall, dass
-                    die Verhandlungen nicht zu einem Abschluss führen. <br />
-                    <br /> Auf Basis Ihrer Angaben ist das Angebot bis heute 24:00 Uhr verbindlich. Danach kann sich die
-                    Kondition ändern. 
-                </p>
-            ),
-            button: 'Antrag fertigstellen',
-        },
         fill_out_information_below: 'Beantworte noch die folgenden Fragen, um den Antrag fertigzustellen.',
         log_out: 'Abmelden',
         select_language: 'Sprache wählen',
