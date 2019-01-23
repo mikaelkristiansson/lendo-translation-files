@@ -39,6 +39,10 @@ export default {
         open_hours: "Öffnungszeiten",
         contact_us: "Kontaktieren Sie uns!"
     },
+    cookie_banner: {
+        text: <span>Durch die Nutzung unseres Dienstes stimmen Sie der Verwendung von Cookies zu. <a href="/datenschutz/cookies">Mehr über Cookies.</a></span>,
+        button: 'Verstanden',
+    },
     footer: {
         our_services: "Über Kredite",
         lendo: "Über Lendo",
