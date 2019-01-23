@@ -148,13 +148,13 @@ export default {
     },
     details_page: {
         complete_application: {
-            header: 'Deinen Antrag fertigstellen',
+            header: 'Antrag fertigstellen',
             button: 'Antrag fertigstellen',
         },
         edge_cases: {
             unicredit: {
                 // REMOVE IF NOT NEEDED ANY MORE (SAME AS banks_austria)
-                header: 'Ihr Ablebensschutz ist bereits inkludiert.',
+                header: 'Ihr Ablebensschutz ist bereits inkludiert',
                 text: (
                     <p>
                         Bei Ihrem Kredit ist das Risiko Ihres Ablebens in Höhe des aushaftenden Kreditbetrages (inkl.
@@ -170,7 +170,7 @@ export default {
                 ),
             },
             bank_austria: {
-                header: 'Ihr Ablebensschutz ist bereits inkludiert.',
+                header: 'Ihr Ablebensschutz ist bereits inkludiert',
                 text: (
                     <p>
                         Bei Ihrem Kredit ist das Risiko Ihres Ablebens in Höhe des aushaftenden Kreditbetrages (inkl.
@@ -186,7 +186,7 @@ export default {
                 ),
             },
             erste_bank: {
-                header: 'Ihr Ablebensschutz ist bereits inkludiert.',
+                header: 'Zusätzliche Information',
                 text: (
                     <p>
                         Durch Klicken auf &bdquo;Antrag fertigstellen&rdquo; erkläre ich mich damit einverstanden, dass
@@ -204,16 +204,16 @@ export default {
     },
     requirement: {
         file_input: {
-            browse_files: 'Drag & Drop your files or <span class="filepond--label-action"> Browse </span>',
-            file_to_large: 'File is too large',
-            max_file_size: 'Maximum file size is {filesize}',
+            browse_files: 'Die gewünschte Datei per Drag & Drop hierhin ziehen oder <span class="filepond--label-action"> Durchsuchen </span>',
+            file_to_large: 'Datei ist zu groß',
+            max_file_size: 'Die maximale Dateigröße ist {filesize}',
         },
         payslip: {
-            label: ({ number }) => `Payment slip #${number}`,
-            add_field_button: 'Add field input',
+            label: ({ number }) => `Gehaltszettel bzw. Pensionsbescheid #${number}`,
+            add_field_button: 'Feld hinzufügen',
         },
         copy_of_id: {
-            label: 'Copy of ID',
+            label: 'Ausweiskopie',
         },
         signing_method: {
             label: 'Art der Legitimierung',
