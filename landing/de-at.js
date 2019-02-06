@@ -41,7 +41,7 @@ export default {
     },
     cookie_banner: {
         text: <span>Durch die Nutzung unseres Dienstes stimmen Sie der Verwendung von Cookies zu. <a href="/datenschutz/cookies">Mehr über Cookies.</a></span>,
-        button: 'Verstanden',
+        button: 'OK',
     },
     footer: {
         our_services: "Über Kredite",
@@ -205,10 +205,12 @@ export default {
         },
         label: {
             confirm_terms: "Ich bestätige:",
+            data_privacy: <p style={{margin: '0'}}>Ich habe die <a href="/datenschutz/datenschutzerklaerung">Datenschutzerklärung</a> gelesen und akzeptiert.</p>,
             austrian_citizen_one_year:
         "Ich habe meinen Hauptwohnsitz seit mindestens 1 Jahr in Österreich",
             low_income_partner: "Partner mit niedrigem Einkommen",
             gender: "Geschlecht",
+            title_honorific: "Titel",
             title_academic: "Akademischer Titel",
             nationality: "Staatsbürgerschaft",
             date_of_birth: "Geburtsdatum",
@@ -274,7 +276,7 @@ export default {
             employment_type: {
                 employee: "Angestellter",
                 worker: "Arbeiter",
-                public_worker: "Beamter",
+                public_servant: "Beamter",
                 pensioner: "Pensionist",
             },
             employment_industry: {
@@ -336,7 +338,7 @@ export default {
                 married: "Verheiratet",
                 divorced: "Geschieden",
                 widowed: "Verwitwet",
-                registered_cohabitation: "Eingetragene Partnerschaft"
+                live_together: "Eingetragene Partnerschaft"
             },
             accommodation: {
                 monthly_cost: "Monatliche Miet- und Immobilienkreditkosten",
@@ -475,6 +477,9 @@ export default {
                     additional_expenses: "Die monatlichen Betriebskosten inkludieren Strom, Heizung, Müll, etc.",
                 },
             },
+        },
+        other: {
+            communication_info: "Mit der Eintragung einer E-Mailadresse und Telefonnummer erkläre ich mich damit einverstanden, Informationen mit Lendo und Lendos Kooperationspartner via E-Mail/Telefon auszutauschen."
         }
     }
 };
