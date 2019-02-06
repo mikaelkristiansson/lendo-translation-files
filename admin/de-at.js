@@ -11,7 +11,7 @@ export default {
         monthly_cost: 'monatliche Rate',
         administration_fee: 'Bearbeitungsgsgebühr',
         direct_debit_fee: 'Kontoführungsgebühr',
-        setup_fee: 'Einrichtungsgebühr',
+        setup_fee: 'Kontoführungsgebühr',
         monthly_cost_last: 'letzte monatliche Rate',
         monthly_cost_first: 'Monatliche Rate',
         repayment_type: 'Rückzahlungsart',
@@ -169,7 +169,7 @@ export default {
             employment_type: {
                 employee: 'Angestellter',
                 worker: 'Arbeiter',
-                public_worker: 'Beamter',
+                public_servant: 'Beamter',
                 pensioner: 'Pensionist'
             },
             employment_industry: {
@@ -231,7 +231,7 @@ export default {
                 married: 'Verheiratet',
                 divorced: 'Geschieden',
                 widowed: 'Verwitwet',
-                registered_cohabitation: 'Eingetragene Partnerschaft'
+                live_together: 'Eingetragene Partnerschaft'
             },
             accommodation: {
                 monthly_cost: 'Monatliche Miet- und Immobilienkreditkosten',
