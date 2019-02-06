@@ -21,7 +21,7 @@ export default {
         interest_rate: 'Zinssatz',
         interest: 'Zins',
         amortization: 'Laufzeit',
-        total_cost: 'Gesamtkosten',
+        total_cost: 'Gesamter Rückzahlungsbetrag',
         social_id: 'ID',
         work_place: 'Arbeitgeber',
         email_adress: 'Email-Adresse',
@@ -36,13 +36,19 @@ export default {
     },
     login: {
         header: 'Anmelden',
-        sms: 'SMS',
-        otp_message: 'Der Verifizierungscode wurde per SMS verschickt. Bitte diesen hier eingeben.',
+        // sms: 'SMS',
+        // otp_message: 'Der Verifizierungscode wurde per SMS verschickt. Bitte diesen hier eingeben.',
         username_placeholder: 'Lendo ID',
         otp_placeholder: 'Verifizierungscode',
         verify_otp_button: 'Überprüfen',
         submit_button: 'Anmelden',
         resend_otp_button: 'Neuen Verifizierungscode senden',
+    },
+    otp: {
+        sent: {
+            title: 'Ein Verifizierungscode wurde an ihr Telefon gesandt.',
+            content: 'Wir haben Ihnen einen Bestätigungscode geschickt. Bitte geben Sie diesen hier ein.',
+        },
     },
     application: {
         applied_amount: 'Beantragter Kreditbetrag',
@@ -75,9 +81,9 @@ export default {
     },
     offer: {
         fee: {
-            arrangement_fee: 'Teilnahmegebühr',
+            setup_fee: 'Kontoführungsgebühr',
             administration_fee: 'Bearbeitungsgebühr',
-            direct_debit_fee: 'Kontoführungsgebühr',
+            autogiro_fee: '',
         },
         cost: {
             monthly_cost: 'Monatliche Rate',
@@ -108,8 +114,8 @@ export default {
         straight_description_short:
             'Bei jeder Zahlung wird der gleiche Betrag rückgeführt. Der Zinsenanteil sinkt daher mit der Tilgung des Darlehens, da der Kreditbetrag zunehmend kleiner wird.',
         annuity: 'Annuity',
-        fixed: 'Fixed',
-        variable: 'Variable',
+        fixed: 'Fix',
+        variable: 'Variabel',
         lower_accepted_amount: 'The amount granted is lower than the amount applied.',
         early_redemption:
             "If the loan is paid back before the repayment time is over, the applicant will still be debited the total repayment time's interest fee.",
@@ -123,12 +129,12 @@ export default {
             'A politically exposed person, PEP, have or have had a higher political post or government position. If you are a close co-worker or familymember of such person you should also uncheck this box.',
         no_offer: {
             per_du: {
-                header: 'Du hast leider keine Kreditangebote bekommen',
-                desc: 'Bitte wende dich an den Lendo Kundenservice, wir helfen dir gerne weiter.',
+                header: 'Du hast noch keine Kreditangebote bekommen.',
+                desc: 'Bei Fragen steht der Lendo Kundenservice gerne zur Verfügung.',
             },
             per_sie: {
-                header: 'Sie haben leider keine Kreditangebote bekommen',
-                desc: 'Bitte wenden Sie sich an den Lendo Kundenservice, wir helfen Ihnen gerne weiter.',
+                header: 'Du hast noch keine Kreditangebote bekommen.',
+                desc: 'Bei Fragen steht der Lendo Kundenservice gerne zur Verfügung.',
             },
         },
         // no_offer_header: 'Du hast derzeit keine Angebote',
@@ -151,60 +157,11 @@ export default {
             header: 'Antrag fertigstellen',
             button: 'Antrag fertigstellen',
         },
-        edge_cases: {
-            unicredit: {
-                // REMOVE IF NOT NEEDED ANY MORE (SAME AS banks_austria)
-                header: 'Ihr Ablebensschutz ist bereits inkludiert',
-                text: (
-                    <p>
-                        Bei Ihrem Kredit ist das Risiko Ihres Ablebens in Höhe des aushaftenden Kreditbetrages (inkl.
-                        Zinsen) automatisch mitversichert. Eine Auszahlung des Kredites ist nur möglich wenn Sie
-                        folgende Frage mit einem &quot;<b>NEIN</b>&quot; beantworten können: Standen Sie in den letzten
-                        fünf Jahren in ärztlicher Behandlung wegen Schlaganfall, Multipler Sklerose, Diabetes Mellitus
-                        Typ I, Leberzirrhose, Erkrankungen des Herzens (jedoch nicht Bluthochdruck und/oder erhöhte
-                        Blutfette), eines Krebsleidens oder stehen Sie derzeit bzw. standen Sie jemals in ärztlicher
-                        Behandlung wegen Dialyse, Organtransplantation, Aids oder Schizophrenie? Die Richtigkeit dieser
-                        Gesundheitserklärung bestätigen Sie wenn Sie Ihre Kreditunterlagen unterschreiben. Ausnahmen zum
-                        Versicherungsschutz finden Sie hier.
-                    </p>
-                ),
-            },
-            bank_austria: {
-                header: 'Ihr Ablebensschutz ist bereits inkludiert',
-                text: (
-                    <p>
-                        Bei Ihrem Kredit ist das Risiko Ihres Ablebens in Höhe des aushaftenden Kreditbetrages (inkl.
-                        Zinsen) automatisch mitversichert. Eine Auszahlung des Kredites ist nur möglich wenn Sie
-                        folgende Frage mit einem &quot;<b>NEIN</b>&quot; beantworten können: Standen Sie in den letzten
-                        fünf Jahren in ärztlicher Behandlung wegen Schlaganfall, Multipler Sklerose, Diabetes Mellitus
-                        Typ I, Leberzirrhose, Erkrankungen des Herzens (jedoch nicht Bluthochdruck und/oder erhöhte
-                        Blutfette), eines Krebsleidens oder stehen Sie derzeit bzw. standen Sie jemals in ärztlicher
-                        Behandlung wegen Dialyse, Organtransplantation, Aids oder Schizophrenie? Die Richtigkeit dieser
-                        Gesundheitserklärung bestätigen Sie wenn Sie Ihre Kreditunterlagen unterschreiben. Ausnahmen zum
-                        Versicherungsschutz finden Sie hier.
-                    </p>
-                ),
-            },
-            erste_bank: {
-                header: 'Zusätzliche Information',
-                text: (
-                    <p>
-                        Durch Klicken auf &bdquo;Antrag fertigstellen&rdquo; erkläre ich mich damit einverstanden, dass
-                        jenes Kreditinstitut, mit dem ich in Verhandlungen zum Abschluss eines Kreditvertrages trete,
-                        folgende Daten an LENDO übermittelt: Vorname, Nachname, Geburtsdatum, ausgezahlte Kreditsumme.
-                        Dies gilt sowohl für den Fall, dass es zum Abschluss eines Kreditvertrages kommt, als auch für
-                        den Fall, dass die Verhandlungen nicht zu einem Abschluss führen. <br />
-                        <br /> Auf Basis Ihrer Angaben ist das Angebot bis heute 24:00 Uhr verbindlich. Danach kann sich
-                        die Kondition ändern. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen
-                        nur einmal durchgeführt werden kann.
-                    </p>
-                ),
-            },
-        },
     },
     requirement: {
         file_input: {
-            browse_files: 'Die gewünschte Datei per Drag & Drop hierhin ziehen oder <span class="filepond--label-action"> Durchsuchen </span>',
+            browse_files:
+                'Die gewünschte Datei per Drag & Drop hierhin ziehen oder <span class="filepond--label-action"> Durchsuchen </span>',
             file_to_large: 'Datei ist zu groß',
             max_file_size: 'Die maximale Dateigröße ist {filesize}',
         },
@@ -226,19 +183,47 @@ export default {
         },
     },
     accepted: {
-        this_happens_now: 'So geht es nun weiter:',
+        what_happens_now_title: 'So geht es nun weiter:',
+        what_happens_now_text: {
+            per_du: {
+                raiffeisen_bank: [
+                    'Auf Basis deiner Angaben bereiten wir die Unterlagen zur Unterschrift für dich vor.',
+                    'Für die Identitätsprüfung und Unterschrift bitten wir dich in eine unserer Filialen zu kommen.',
+                    'Nach positiver Prüfung erfolgt die Auszahlung direkt auf dein angegebenes Girokonto.',
+                ],
+                bank_austria: [
+                    'Auf Basis deiner Angaben bereiten wir die Unterlagen zur Unterschrift für dich vor.',
+                    'Je nach gewählter Art der Legitimierung kontaktiert dich einer unserer Mitarbeiter zur Terminvereinbarung.',
+                    'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
+                ],
+                default: ({ bankName }) => [
+                    `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
+                    'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
+                    `Du erhältst den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
+                ],
+            },
+            per_sie: {
+                raiffeisen_bank: [
+                    'Auf Basis Ihrer Angaben bereiten wir die Unterlagen zur Unterschrift für Sie vor.',
+                    'Nach positiver Prüfung erfolgt die Auszahlung direkt auf Ihr angegebenes Girokonto.',
+                    'Für die Identitätsprüfung und Unterschrift bitten wir Sie in eine unserer Filialen zu kommen.',
+                ],
+                bank_austria: [
+                    'Auf Basis Ihrer Angaben bereiten wir die Unterlagen zur Unterschrift für Sie vor.',
+                    'Je nach gewählter Art der Legitimierung kontaktiert Sie einer unserer Mitarbeiter zur Terminvereinbarung',
+                    'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
+                ],
+                default: ({ bankName }) => [
+                    `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
+                    'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
+                    `Du erhältst den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
+                ],
+            },
+        },
         you_have_choosen: ({ bankName }) => `Du hast dich für einen Kredit bei ${bankName} entschieden`,
         add_after: 'Folgende Zusatzleistungen können später noch ausgewählt werden',
-        texts: {
-            general: ({ bankName }) => [
-                `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
-                'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
-                `Du erhältst den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
-            ],
-            acceptance_url: ({ bankName }) => [
-                `Um den Antrag fertigzustellen, klicken Sie auf das untenstehende Feld und folgen Sie den Antragsprozessschritten. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur einmal durchgeführt werden kann.`,
-            ],
-        },
+        acceptance_url:
+            'Um den Antrag fertigzustellen, klicken Sie auf das untenstehende Feld und folgen Sie den Antragsprozessschritten. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur einmal durchgeführt werden kann.',
         finalize_application_button: 'Kreditanfrage fertigstellen',
     },
     ui: {
@@ -291,6 +276,7 @@ export default {
         },
     },
     errors: {
+        title: 'Ein Fehler ist aufgetreten',
         'Did not get any jwt token cookie': 'Du bist nicht mehr angemeldet',
         unknown: 'Ein unbekannter Fehler ist aufgetreten',
         unauthed: 'You are unauthorized to access the page, please try log in again',
@@ -309,6 +295,13 @@ export default {
             'Bitte lesen Sie den Kreditvermittlungsauftrag durch und stimmen Sie diesem zu. Wir brauchen Ihre Zustimmung, um in Ihrem Auftrag Kreditangebote für Sie von Banken einholen zu können. Für das Einholen der Angebote entstehen Ihnen keinerlei Kosten oder Verpflichtungen. Um die Kreditvermittlungsvollmacht zu speichern klicken Sie bitte auf den Button.',
         ready_consent_button: 'Ich stimme zu',
         creating_validation: 'Creating validation',
+        error: {
+            consent_get: 'Der Verifizierungscode konnte nicht verifiziert werden. Bitte einen neuen anfordern.',
+            otp_generate: 'Der Verifizierungscode konnte nicht gesendet werden. Bitte einen neuen anfordern.',
+            otp_validate:
+                'Der Verifizierungscode wurde nicht erkannt. Bitte nocheinmal eingeben oder einen neuen anfordern.',
+            default: 'Leider ist ein Fehler aufgetreten. Bitte einen neuen Veifizierungscode anfordern.',
+        },
     },
     other: {
         loan_tip_header: 'Tipps',
