@@ -274,6 +274,7 @@ export default {
             ],
             reasons_right: ['Zu schlechte Kreditwürdigkeit'], // Add reasons why banks might not accept your application
         },
+        older_active_offers: 'Older active offers'
     },
     errors: {
         title: 'Ein Fehler ist aufgetreten',
