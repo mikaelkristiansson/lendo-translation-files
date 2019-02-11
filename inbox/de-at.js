@@ -232,7 +232,8 @@ export default {
         offers: 'Angebote',
         my_offers: 'Meine Angebote',
         my_information: 'Meine Informationen',
-        additional_reqs_from_bank: 'Bitte die letzten 3 Gehaltszettel oder den Pensionsbescheid hochladen (Dateien können einzeln oder gesammelt hochgeladen werden).',
+        additional_reqs_from_bank:
+            'Bitte die letzten 3 Gehaltszettel oder den Pensionsbescheid hochladen (Dateien können einzeln oder gesammelt hochgeladen werden).',
         fill_out_information_below: 'Folgende Informationen werden noch benötigt',
         log_out: 'Abmelden',
         select_language: 'Sprache wählen',
@@ -274,10 +275,11 @@ export default {
             ],
             reasons_right: ['Zu schlechte Kreditwürdigkeit'], // Add reasons why banks might not accept your application
         },
-        older_active_offers: 'Vorherige Angebote'
+        older_active_offers: 'Vorherige Angebote',
     },
     errors: {
         title: 'Ein Fehler ist aufgetreten',
+        contact_us: 'Leider ist ein Fehler aufgetreten. Bitte kontaktieren Sie unseren Kundenservice.',
         'Did not get any jwt token cookie': 'Du bist nicht mehr angemeldet',
         unknown: 'Ein unbekannter Fehler ist aufgetreten',
         unauthed: 'You are unauthorized to access the page, please try log in again',
@@ -286,6 +288,8 @@ export default {
         required: 'Dies ist ein Pflicht-Feld',
         email: 'Ungültige E-Mail-Adresse',
         required_select: 'Bitte triff eine Wahl',
+        required_checkbox: 'Bitte zustimmen',
+        required_dropdown: 'Auswahl ist erforderlich',
         account_length: ({ bankName, accountLength }) =>
             `${bankName} requires account numbers with the length of ${accountLength}`,
         min_lenth: ({ minLength }) => `Needs to be at least ${minLength} characters`,
