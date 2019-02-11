@@ -4,7 +4,7 @@ export default {
         amount: 'Kreditbetrag',
         amortize_length: 'Laufzeit',
         loan_purpose: 'Kreditzweck',
-        loan_type: 'Kreditart',
+        loan_type: 'Zinssatzart',
         address: 'Adresse',
         email: 'Email',
         your_email: 'Deine Email',
@@ -81,15 +81,15 @@ export default {
     },
     offer: {
         fee: {
-            setup_fee: 'Kontoführungsgebühr',
+            setup_fee: 'Kontoführungsentgelt',
             administration_fee: 'Bearbeitungsgebühr',
             autogiro_fee: '',
         },
         cost: {
             monthly_cost: 'Monatliche Rate',
-            monthly_cost_first: 'Monatliche Kosten zuerst',
-            monthly_cost_last: 'Monatliche Kosten zuletzt',
-            monthly_cost_average: 'Durchschnittliche monatliche Kosten',
+            monthly_cost_first: 'Monatliche Rate',
+            monthly_cost_last: 'Letzte Monatliche Rate',
+            monthly_cost_average: 'Durchschnittliche monatliche Rate',
             short: {
                 monthly_cost: 'Rate',
             },
@@ -133,7 +133,7 @@ export default {
                 desc: 'Bei Fragen steht der Lendo Kundenservice gerne zur Verfügung.',
             },
             per_sie: {
-                header: 'Du hast noch keine Kreditangebote bekommen.',
+                header: 'Sie haben noch keine Kreditangebote bekommen.',
                 desc: 'Bei Fragen steht der Lendo Kundenservice gerne zur Verfügung.',
             },
         },
@@ -166,7 +166,7 @@ export default {
             max_file_size: 'Die maximale Dateigröße ist {filesize}',
         },
         payslip: {
-            label: ({ number }) => `Gehaltszettel bzw. Pensionsbescheid #${number}`,
+            label: ({ number }) => `Gehaltszettel #${number} bzw. Pensionsbescheid`,
             add_field_button: 'Feld hinzufügen',
         },
         copy_of_id: {
@@ -210,7 +210,7 @@ export default {
                 ],
                 bank_austria: [
                     'Auf Basis Ihrer Angaben bereiten wir die Unterlagen zur Unterschrift für Sie vor.',
-                    'Je nach gewählter Art der Legitimierung kontaktiert Sie einer unserer Mitarbeiter zur Terminvereinbarung',
+                    'Je nach gewählter Art der Legitimierung kontaktiert Sie einer unserer Mitarbeiter zur Terminvereinbarung.',
                     'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
                 ],
                 default: ({ bankName }) => [
@@ -232,7 +232,7 @@ export default {
         offers: 'Angebote',
         my_offers: 'Meine Angebote',
         my_information: 'Meine Informationen',
-        additional_reqs_from_bank: 'Dateien einzeln oder gesammelt hochladen',
+        additional_reqs_from_bank: 'Bitte die letzten 3 Gehaltszettel oder den Pensionsbescheid hochladen (Dateien können einzeln oder gesammelt hochgeladen werden).',
         fill_out_information_below: 'Folgende Informationen werden noch benötigt',
         log_out: 'Abmelden',
         select_language: 'Sprache wählen',
@@ -274,7 +274,7 @@ export default {
             ],
             reasons_right: ['Zu schlechte Kreditwürdigkeit'], // Add reasons why banks might not accept your application
         },
-        older_active_offers: 'Older active offers'
+        older_active_offers: 'Vorherige Angebote'
     },
     errors: {
         title: 'Ein Fehler ist aufgetreten',
