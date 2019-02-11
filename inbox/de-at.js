@@ -167,7 +167,7 @@ export default {
         },
         payslip: {
             label: ({ number }) => `Gehaltszettel #${number} bzw. Pensionsbescheid`,
-            add_field_button: 'Feld hinzufügen',
+            add_field_button: 'Weiteren Gehaltszettel hochladen',
         },
         copy_of_id: {
             label: 'Ausweiskopie',
