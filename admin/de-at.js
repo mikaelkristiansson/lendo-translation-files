@@ -94,6 +94,11 @@ export default {
                 title: 'Antrag abgelehnt',
                 desc: 'Der Antrag wurde abgelehnt'
             }
+        },
+        withdrawn: {
+            title: 'You have withdrawn the offer the customer accepted. Please notify Lendo about the withdrawal.',
+            desc:
+                'If you wish to place a new offer, you can fill in the bid form below, but the user cannot choose the new offer until we are informed.'
         }
     },
     application_form: {
