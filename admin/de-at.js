@@ -96,9 +96,9 @@ export default {
             }
         },
         withdrawn: {
-            title: 'You have withdrawn the offer the customer accepted. Please notify Lendo about the withdrawal.',
+            title: 'Sie haben das Angebot, dass der Kunde bereits angenommen hat zurückgezogen. Bitte kontaktieren Sie uns und teilen Sie uns die Gründe des Widerrufs mit.',
             desc:
-                'If you wish to place a new offer, you can fill in the bid form below, but the user cannot choose the new offer until we are informed.'
+                'Wenn Sie ein neues Angebot abgeben wollen, füllen Sie bitte die Datenfelder nocheinmal aus. Der Kunde kann das neue Angebot aber erst auswählen, nachdem wir darüber informiert worden sind.'
         }
     },
     application_form: {
