@@ -81,8 +81,8 @@ export default {
     },
     offer: {
         fee: {
-            setup_fee: 'Kontoführungsentgelt',
-            administration_fee: 'Bearbeitungsgebühr',
+            setup_fee: 'Bearbeitungsgebühr (einmalig)',
+            administration_fee: 'Kontoführungsentgelt (monatlich)',
             autogiro_fee: '',
         },
         cost: {
