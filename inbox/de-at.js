@@ -170,7 +170,7 @@ export default {
             add_field_button: 'Weiteren Gehaltszettel hochladen',
         },
         copy_of_id: {
-            label: 'Ausweiskopie',
+            label: 'Ausweiskopie (Reisepass oder Personalausweis)',
         },
         signing_method: {
             label: 'Art der Legitimierung',
