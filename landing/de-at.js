@@ -318,7 +318,7 @@ export default {
                 finland: "Finnland",
                 france: "Frankreich",
                 greece: "Griechenland",
-                united_kingdom: "Großbritannien"
+                united_kingdom: "Großbritannien,"
                 ireland: "Irland",
                 croatia: "Kroatien",
                 latvia: "Lettland",
