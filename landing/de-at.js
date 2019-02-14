@@ -226,7 +226,7 @@ export default {
             monthly_expenses: "Monatliche Kredit- und Leasingkosten",
             extra_monthly_income:
         "Monatliche Einkünfte aus Beihilfen, Mieten, Nebeneinkünften",
-            iban: "IBAN",
+            iban: "IBAN des Auszahlungskontos",
             accommodation: {
                 type: "Wohnsituation",
                 size: "Quadratmeter Wohnfläche",
@@ -305,20 +305,22 @@ export default {
             },
             nationality: {
                 austria: "Österreich",
+                germany: "Deutschland",
+                italy: "Italien",
+                slovakia: "Slowakei",
+                slovenia: "Slowenien",
+                czech_republic: "Tschechische Republik",
+                hungary: "Ungarn",
                 belgium: "Belgien",
                 bulgaria: "Bulgarien",
-                croatia: "Kroatien",
-                cyprus: "Zypern",
-                czech_republic: "Tschechische Republik",
                 denmark: "Dänemark",
                 estonia: "Estland",
                 finland: "Finnland",
                 france: "Frankreich",
-                germany: "Deutschland",
                 greece: "Griechenland",
-                hungary: "Ungarn",
-                italy: "Italien",
+                united_kingdom: "Großbritannien"
                 ireland: "Irland",
+                croatia: "Kroatien",
                 latvia: "Lettland",
                 lithuania: "Litauen",
                 luxembourg: "Luxemburg",
@@ -328,10 +330,8 @@ export default {
                 portugal: "Portugal",
                 romania: "Rumänien",
                 sweden: "Schweden",
-                slovakia: "Slowakei",
-                slovenia: "Slowenien",
                 spain: "Spanien",
-                united_kingdom: "Großbritannien"
+                cyprus: "Zypern",
             },
             civil_state: {
                 single: "Ledig",
@@ -419,7 +419,7 @@ export default {
                 iban:
                 "Ihren IBAN finden Sie auf Ihrer Bankomatkarte. Die Angabe ist für die Überweisung des Kredits nötig.",
                 vehicles_amount:
-                "Bitte geben Sie die Anzahl Ihrer privaten Autos an. Dienstwägen oder gewerbliche Fahrzeuge zählen nicht dazu.",
+                "Bitte geben Sie die Anzahl Ihrer privaten Autos an. Dienstautos oder gewerbliche Fahrzeuge zählen nicht dazu.",
                 monthly_expenses:
                 "Bitte geben Sie Ihre monatlichen Verpflichtungen aus Konsumkrediten (nicht Immobilienkrediten!), Leasing, Ratenzahlung etc. an.",
                 child_support_no_children:

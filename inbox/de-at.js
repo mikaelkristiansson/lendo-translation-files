@@ -95,10 +95,10 @@ export default {
             },
         },
         interest: {
-            effective: 'Effektivzinssatz',
+            effective: 'Effektivzinssatz p.a.',
             nominal: 'Sollzinssatz',
             short: {
-                effective: 'Eff.zinssatz',
+                effective: 'Eff.zinssatz p.a.',
                 nominal: 'Sollzinssatz',
             },
         },
