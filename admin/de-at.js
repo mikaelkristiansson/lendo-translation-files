@@ -43,10 +43,10 @@ export default {
         hours: ({ number }) => `${number} %{Stunde|Stunden}`,
         minutes: ({ number }) => `${number} %{Minute|Minuten}`,
         seconds: ({ number }) => `${number} %{Sekunde|Sekunden}`,
-        show_responses: ({ hide }) => `${hide ? 'Hide' : 'Show'} responses`,
+        show_responses: ({ hide }) => `Informationen ${hide ? 'Verstecken' : 'Anzeigen'}`,
         yes: 'Ja',
         no: 'Nein',
-        more_info: 'More info'
+        more_info: 'Weitere Informationen'
     },
     treat: {
         revision_history: 'Versionsgeschichte',
@@ -109,33 +109,33 @@ export default {
     application: {
         accepted_offer: {
             status: {
-                customer_accepted_offer: 'Customer accepted offers',
-                bill_of_debt_sent: 'Bill of debt sent',
-                loan_paid: 'Loan paid'
+                customer_accepted_offer: 'Kunde hat Angebot angenommen',
+                bill_of_debt_sent: 'Vertrag verschickt',
+                loan_paid: 'Kredit ausgezahlt'
             },
             applicant_information: {
-                title: 'Information provided by the applicant'
+                title: 'Vom Kunden übermittelte Informationen'
             },
             complement: {
-                title: 'Requested complements',
-                no_complements: 'No complements requested'
+                title: 'Zusätzliche Informationen beantragen',
+                no_complements: 'Keine zusätzlichen Informationen beantragt'
             },
-            send_bill_of_debt: 'Send bill of debt',
-            mark_loan_paid_out: 'Mark loan paid out',
-            been_paid_out: 'Loan has been paid out',
-            withdraw_button: 'Withdraw',
+            send_bill_of_debt: 'Vertrag verschickt',
+            mark_loan_paid_out: 'Kredit ausgezahlt',
+            been_paid_out: 'Der Kredit wurde ausgezahlt',
+            withdraw_button: 'Angebot zurückziehen',
             withdraw_acceptance:
-                'By withdrawing the offer, the customer will no longer be able to proceed with your loan offer.',
+                'Wenn Sie das Angebot zurückziehen, kann der Kunde den Kredit nicht abschliessen.',
             withdraw_no_acceptance:
-                'By withdrawing an offer the offer will not be available for the applicant to choose from. You will still be able to send a new offer to the new revision.'
+                'Wenn Sie das Angebot zurückziehen, kann es nicht mehr vom Kunden ausgewählt werden. Sie können aber trotzdem ein neues Angebot schicken, wenn eine Überarbeitung des Antrags vorliegt.'
         },
         status: {
-            active: 'Active loan offer',
-            withdrawn: 'Withdrawn',
-            denial: 'Denied',
-            request_co_applicant: 'Request co-applicant'
+            active: 'Aktives Angebot',
+            withdrawn: 'Angebot zurückziehen',
+            denial: 'Abgelehnt',
+            request_co_applicant: '2.Kreditnehmer beantragen'
         },
-        view_button: 'View'
+        view_button: 'Anzeigen'
     },
     application_form: {
         button: {
