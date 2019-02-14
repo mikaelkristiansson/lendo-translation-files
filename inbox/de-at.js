@@ -297,7 +297,7 @@ export default {
     consent: {
         files_title: 'Kreditvermittlungsvollmacht',
         files_text:
-            'Bitte lesen Sie den Kreditvermittlungsauftrag durch und stimmen Sie diesem zu. Wir brauchen Ihre Zustimmung, um in Ihrem Auftrag Kreditangebote für Sie von Banken einholen zu können. Für das Einholen der Angebote entstehen Ihnen keinerlei Kosten oder Verpflichtungen. Um die Kreditvermittlungsvollmacht zu speichern klicken Sie bitte auf den Button.',
+            'Bitte lesen Sie den Kreditvermittlungsauftrag durch und stimmen Sie diesem zu. Wir brauchen Ihre Zustimmung, um in Ihrem Auftrag Kreditangebote für Sie von Banken einholen zu können. Für das Einholen der Angebote entstehen Ihnen keinerlei Kosten oder Verpflichtungen. Um die Kreditvermittlungsvollmacht anzuzeigen oder zu speichern klicken Sie bitte auf den Button.',
         ready_consent_button: 'Ich stimme zu',
         creating_validation: 'Creating validation',
         error: {

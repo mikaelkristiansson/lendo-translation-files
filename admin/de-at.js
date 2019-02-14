@@ -131,7 +131,7 @@ export default {
         },
         status: {
             active: 'Aktives Angebot',
-            withdrawn: 'Angebot zurückziehen',
+            withdrawn: 'Angebot zurückgezogen',
             denial: 'Abgelehnt',
             request_co_applicant: '2.Kreditnehmer beantragen'
         },

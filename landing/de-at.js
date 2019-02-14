@@ -455,7 +455,7 @@ export default {
                 iban:
                 "Deinen IBAN findest du auf deiner Bankomatkarte. Die Angabe ist für die Überweisung des Kredits nötig.",
                 vehicles_amount:
-                "Bitte gib die Anzahl deiner privaten Autos an. Dienstwägen oder gewerbliche Fahrzeuge zählen nicht dazu.",
+                "Bitte gib die Anzahl deiner privaten Autos an. Dienstautos oder gewerbliche Fahrzeuge zählen nicht dazu.",
                 monthly_expenses:
                 "Bitte gib deine monatlichen Verpflichtungen aus Konsumkrediten (nicht Immobilienkrediten!), Leasing, Ratenzahlung etc. an.",
                 child_support_no_children:
