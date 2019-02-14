@@ -15,6 +15,8 @@ export default {
         monthly_cost_last: 'Letzte monatliche Rate',
         monthly_cost_first: 'Monatliche Rate',
         repayment_type: 'Rückzahlungsart',
+        amount_to_solve_external: 'Amount to solve external',
+        amount_to_solve_internal: 'Amount to solve internal',
         address: 'Adresse',
         accepted_at: 'Akzeptiert um',
         accepted_offer: 'Angebot angenommen',
@@ -41,8 +43,10 @@ export default {
         hours: ({ number }) => `${number} %{Stunde|Stunden}`,
         minutes: ({ number }) => `${number} %{Minute|Minuten}`,
         seconds: ({ number }) => `${number} %{Sekunde|Sekunden}`,
+        show_responses: ({ hide }) => `${hide ? 'Hide' : 'Show'} responses`,
         yes: 'Ja',
-        no: 'Nein'
+        no: 'Nein',
+        more_info: 'More info'
     },
     treat: {
         revision_history: 'Versionsgeschichte',
@@ -96,10 +100,42 @@ export default {
             }
         },
         withdrawn: {
-            title: 'Sie haben das Angebot, dass der Kunde bereits angenommen hat zurückgezogen. Bitte kontaktieren Sie uns und teilen Sie uns die Gründe des Widerrufs mit.',
+            title:
+                'Sie haben das Angebot, dass der Kunde bereits angenommen hat zurückgezogen. Bitte kontaktieren Sie uns und teilen Sie uns die Gründe des Widerrufs mit.',
             desc:
                 'Wenn Sie ein neues Angebot abgeben wollen, füllen Sie bitte die Datenfelder nocheinmal aus. Der Kunde kann das neue Angebot aber erst auswählen, nachdem wir darüber informiert worden sind.'
         }
+    },
+    application: {
+        accepted_offer: {
+            status: {
+                customer_accepted_offer: 'Customer accepted offers',
+                bill_of_debt_sent: 'Bill of debt sent',
+                loan_paid: 'Loan paid'
+            },
+            applicant_information: {
+                title: 'Information provided by the applicant'
+            },
+            complement: {
+                title: 'Requested complements',
+                no_complements: 'No complements requested'
+            },
+            send_bill_of_debt: 'Send bill of debt',
+            mark_loan_paid_out: 'Mark loan paid out',
+            been_paid_out: 'Loan has been paid out',
+            withdraw_button: 'Withdraw',
+            withdraw_acceptance:
+                'By withdrawing the offer, the customer will no longer be able to proceed with your loan offer.',
+            withdraw_no_acceptance:
+                'By withdrawing an offer the offer will not be available for the applicant to choose from. You will still be able to send a new offer to the new revision.'
+        },
+        status: {
+            active: 'Active loan offer',
+            withdrawn: 'Withdrawn',
+            denial: 'Denied',
+            request_co_applicant: 'Request co-applicant'
+        },
+        view_button: 'View'
     },
     application_form: {
         button: {
