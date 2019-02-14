@@ -96,10 +96,10 @@ export default {
         },
         interest: {
             effective: 'Effektivzinssatz p.a.',
-            nominal: 'Sollzinssatz',
+            nominal: 'Sollzinssatz p.a.',
             short: {
                 effective: 'Eff.zinssatz p.a.',
-                nominal: 'Sollzinssatz',
+                nominal: 'Sollzinssatz p.a.',
             },
         },
         private_loan: 'Private loan',
