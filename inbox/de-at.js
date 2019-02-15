@@ -113,7 +113,7 @@ export default {
             'Ein Konsumkredit ist ein Abstattungskredit. Das bedeutet, dass ein bestimmter Betrag zur Verfügung gestellt wird und monatlich in gleichbleibenden Raten zurückbezahlt wird.',
         straight_description_short:
             'Bei jeder Zahlung wird der gleiche Betrag rückgeführt. Der Zinsenanteil sinkt daher mit der Tilgung des Darlehens, da der Kreditbetrag zunehmend kleiner wird.',
-        annuity: 'Annuity',
+        annuity: 'Annuität',
         fixed: 'Fix',
         variable: 'Variabel',
         lower_accepted_amount: 'The amount granted is lower than the amount applied.',
