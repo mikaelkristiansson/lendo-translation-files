@@ -114,7 +114,10 @@ export default {
                 loan_paid: 'Kredit ausgezahlt'
             },
             applicant_information: {
-                title: 'Vom Kunden übermittelte Informationen'
+                title: 'Vom Kunden übermittelte Informationen',
+                contact_person: 'Contact Person',
+                email: 'Email',
+                signing_method: 'Signing method'
             },
             complement: {
                 title: 'Zusätzliche Informationen',
