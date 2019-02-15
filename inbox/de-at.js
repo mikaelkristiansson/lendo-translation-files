@@ -47,7 +47,7 @@ export default {
     otp: {
         sent: {
             title: 'Ein Verifizierungscode wurde an ihr Telefon gesandt.',
-            content: 'Wir haben Ihnen einen Bestätigungscode geschickt. Bitte geben Sie diesen hier ein.',
+            content: 'Wir haben Ihnen einen Verifizierungscode geschickt. Bitte geben Sie diesen hier ein.',
         },
     },
     application: {

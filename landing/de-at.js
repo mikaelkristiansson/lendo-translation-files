@@ -331,7 +331,7 @@ export default {
                 romania: "Rumänien",
                 sweden: "Schweden",
                 spain: "Spanien",
-                cyprus: "Zypern",
+                cyprus: "Zypern"
             },
             civil_state: {
                 single: "Ledig",
