@@ -115,9 +115,9 @@ export default {
             },
             applicant_information: {
                 title: 'Vom Kunden übermittelte Informationen',
-                contact_person: 'Contact Person',
+                contact_person: 'Kontaktperson',
                 email: 'Email',
-                signing_method: 'Signing method'
+                signing_method: 'Legitimierungsart'
             },
             complement: {
                 title: 'Zusätzliche Informationen',
