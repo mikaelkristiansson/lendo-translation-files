@@ -234,7 +234,7 @@ export default {
                 monthly_cost: "Monatliche Miet- und Immobilienkreditkosten",
                 additional_expenses: "Monatliche Betriebskosten"
             },
-            vehicles_amount: "Anzahl Autos im Haushalt",
+            vehicles_amount: "Auf mich angemeldete Autos",
             employment: {
                 terminated:
           "Ich bestätige, dass mir keine zukünftige Kündigung bekannt ist",

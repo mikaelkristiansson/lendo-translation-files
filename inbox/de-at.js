@@ -243,7 +243,7 @@ export default {
         about_lendo: 'Über Lendo',
         safety_insurance: 'Versicherung',
         back_to_landing: 'Zurück zu Lendo.at',
-        details: 'Details',
+        details: 'Finanzierungsvorschlag (vorbehaltlich positiver Kreditentscheidung)',
         cookies: 'Cookies',
         cookies_desc:
             'Wir verwenden sogenannte Cookies, um unsere Website zu optimieren. Ein Cookie ist eine kleine Textdatei, die von den jeweiligen Servern beim Besuch einer Internetseite verschickt und auf Ihrer Festplatte zwischengespeichert wird. Dies ermöglicht uns Ihren Browser wiederzuerkennen. Cookies enthalten keine personenbezogenen Daten wie Name oder Adresse, sondern lediglich Informationen über Ihren Browser und Ihr Nutzerverhalten.',
