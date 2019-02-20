@@ -198,7 +198,7 @@ export default {
                     }
                 },
                 monthly_income: {
-                    invalid: "Angabe ist ungültig, bitte geben Sie eine Zahl ein",
+                    invalid: "Angabe ist ungültig, bitte eine Zahl eingeben",
                     required: "Angabe ist erforderlich"
                 }
             }
