@@ -46,7 +46,8 @@ export default {
         show_responses: ({ hide }) => `Details ${hide ? 'verstecken' : 'anzeigen'}`,
         yes: 'Ja',
         no: 'Nein',
-        more_info: 'Weitere Informationen'
+        more_info: 'Weitere Informationen',
+        no_content: 'No result'
     },
     treat: {
         revision_history: 'Versionsgeschichte',
@@ -127,8 +128,7 @@ export default {
             mark_loan_paid_out: 'Kredit ausgezahlt',
             been_paid_out: 'Der Kredit wurde ausgezahlt',
             withdraw_button: 'Angebot zurückziehen',
-            withdraw_acceptance:
-                'Wenn Sie das Angebot zurückziehen, kann der Kunde den Kredit nicht abschliessen.',
+            withdraw_acceptance: 'Wenn Sie das Angebot zurückziehen, kann der Kunde den Kredit nicht abschliessen.',
             withdraw_no_acceptance:
                 'Wenn Sie das Angebot zurückziehen, kann es nicht mehr vom Kunden ausgewählt werden. Sie können aber trotzdem ein neues Angebot schicken, wenn eine Überarbeitung des Antrags vorliegt.'
         },
@@ -337,6 +337,17 @@ export default {
                 year: 'YYYY'
             }
         }
+    },
+    search: {
+        title: 'Search results',
+        placeholder: 'Search...',
+        dropdown_option: {
+            application_id: 'app ID',
+            external_id: 'ext ID'
+        },
+        external_id_button: 'Nach Externer ID suchen',
+        result_header: 'Search results for',
+        missing_search_query: 'No search query specified, please use the search bar above'
     },
     user: {
         role: {
