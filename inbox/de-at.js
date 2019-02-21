@@ -76,7 +76,7 @@ export default {
                 'Um Kreditangebote zu bekommen muss eine Kreditanfrage gestellt werden. Button unten klicken, um Kreditanfrage zu vervollständigen.',
             button: 'Kreditanfrage stellen',
         },
-        all_expired: 'Deine Kreditangebote sind abgelaufen. Um einen neuen Kreditanfrage zu stellen',
+        all_expired: 'Deine Kreditangebote sind abgelaufen. Um eine neuen Kreditanfrage zu stellen',
         press_here: 'klicke hier',
     },
     offer: {
@@ -224,9 +224,9 @@ export default {
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
                 ],
                 default: ({ bankName }) => [
-                    `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
+                    `Innerhalb von 24 Stunden erhalten Sie eine E-Mail von ${bankName} an Ihre E-Mail-Adresse mit weiteren Informationen zu Ihrem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelen Sie bitte an die Bank.`,
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
-                    `Du erhältst den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
+                    `Sie erhalten den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
                 ],
             },
         },
