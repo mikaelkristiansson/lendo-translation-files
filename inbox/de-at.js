@@ -196,6 +196,11 @@ export default {
                     'Je nach gewählter Art der Legitimierung kontaktiert dich einer unserer Mitarbeiter zur Terminvereinbarung.',
                     'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
                 ],
+                santander: [
+                    'Ein Mitarbeiter der Santander Consumer Bank wird dich so schnell wie möglich kontaktieren',
+                    'Den unterzeichneten Kreditantrag kannst du dann gesichert im Tool der Santander Consumer Bank ganz einfach als Foto oder Scan hochladen.',
+                    'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
+                ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
@@ -212,6 +217,11 @@ export default {
                     'Auf Basis Ihrer Angaben bereiten wir die Unterlagen zur Unterschrift für Sie vor.',
                     'Je nach gewählter Art der Legitimierung kontaktiert Sie einer unserer Mitarbeiter zur Terminvereinbarung.',
                     'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
+                ],
+                santander: [
+                    'Ein Mitarbeiter der Santander Consumer Bank wird Sie so schnell wie möglich kontaktieren.',
+                    'Den unterzeichneten Kreditantrag können Sie dann gesichert im Tool der Santander Consumer Bank ganz einfach als Foto oder Scan hochladen.',
+                    'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
                 ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
