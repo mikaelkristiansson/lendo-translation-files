@@ -357,7 +357,7 @@ export default {
             }
         },
         placeholder: {
-            title_academic: "Dr.",
+            title_academic: "Titel eingeben",
             first_name: "Max",
             last_name: "Mustermann",
             email: "max.mustermann@mail.at",
@@ -378,7 +378,7 @@ export default {
                 industry: "Branche wählen",
                 since: {
                     month: "MM",
-                    year: "YYYY",
+                    year: "JJJJ",
                 },
                 monthly_income: {
                     salary: ["€", "€", "€"],
@@ -393,15 +393,15 @@ export default {
                 size: "0",
                 since: {
                     month: "MM",
-                    year: "YYYY",
+                    year: "JJJJ",
                 },
                 monthly_cost: "€",
                 additional_expenses: "€",
             },
             date_of_birth: {
-                day: "DD",
+                day: "TT",
                 month: "MM",
-                year: "YYYY",
+                year: "JJJJ",
             },
         },
         help: {

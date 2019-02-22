@@ -10,7 +10,7 @@ export default {
         effective_interest_rate: 'Effektivzinssatz',
         monthly_cost: 'Monatliche Rate',
         administration_fee: 'Kontoführungsentgelt (monatlich)',
-        direct_debit_fee: '',
+        direct_debit_fee: '-',
         setup_fee: 'Bearbeitungsgebühr (einmalig)',
         monthly_cost_last: 'Letzte monatliche Rate',
         monthly_cost_first: 'Monatliche Rate',
@@ -47,7 +47,7 @@ export default {
         yes: 'Ja',
         no: 'Nein',
         more_info: 'Weitere Informationen',
-        no_content: 'No result'
+        no_content: 'Kein Ergebnis'
     },
     treat: {
         revision_history: 'Versionsgeschichte',
@@ -173,7 +173,7 @@ export default {
                 monthly_cost: 'Monatliche Miet- und Immobilienkreditkosten',
                 additional_expenses: 'Monatliche Betriebskosten'
             },
-            vehicles_amount: 'Anzahl Autos im Haushalt',
+            vehicles_amount: 'Anzahl Autos des Kreditnehmers',
             employment: {
                 terminated: 'Ich bestätige, dass mir keine zukünftige Kündigung bekannt ist', //NEW
                 type: 'Beschäftigungsverhältnis',
@@ -312,7 +312,7 @@ export default {
                 name: 'Arbeitgeber',
                 since: {
                     month: 'MM',
-                    year: 'YYYY'
+                    year: 'JJJJ'
                 },
                 monthly_income: {
                     salary: ['Letztes Monat', 'Vorletztes Monat', 'Vor drei Monaten']
@@ -326,28 +326,28 @@ export default {
                 size: 'Quadratmeter',
                 since: {
                     month: 'MM',
-                    year: 'YYYY'
+                    year: 'JJJJ'
                 },
                 monthly_cost: '€',
                 additional_expenses: '€'
             },
             date_of_birth: {
-                day: 'DD',
+                day: 'TT',
                 month: 'MM',
-                year: 'YYYY'
+                year: 'JJJJ'
             }
         }
     },
     search: {
-        title: 'Search results',
-        placeholder: 'Search...',
+        title: 'Suchergebnisse',
+        placeholder: 'Suchen...',
         dropdown_option: {
-            application_id: 'app ID',
-            external_id: 'ext ID'
+            application_id: 'Application ID',
+            external_id: 'Externe ID'
         },
         external_id_button: 'Nach Externer ID suchen',
-        result_header: 'Search results for',
-        missing_search_query: 'No search query specified, please use the search bar above'
+        result_header: 'Suchergebnisse für',
+        missing_search_query: 'Keine Suchanfrage vorhanden, bitte die Suchbox oben benutzen'
     },
     user: {
         role: {
