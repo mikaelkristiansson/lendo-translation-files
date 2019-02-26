@@ -192,6 +192,14 @@ export default {
                 company: {
                     name: "Name des Arbeitgebers ist erforderlich",
                     since: {
+                        month: {
+                            required: "Monat ist erforderlich",
+                            invalid: "Monat ist ungültig",
+                        },
+                        year: {
+                            required: "Jahr ist erforderlich",
+                            invalid: "Jahr ist ungültig"
+                        },
                         three_months: {
                             invalid: "Arbeitsverhältnis muss vor mindestens drei Monaten begonnen haben"
                         }
