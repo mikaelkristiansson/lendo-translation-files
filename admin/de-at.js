@@ -3,7 +3,7 @@ export default {
     // If translation is missing from any of the translation sub object, the translator will look in general
     general: {
         amount: 'Betrag',
-        loan_type: 'Art des Kredites',
+        loan_type: 'Zinssatzart',
         amortize_length: 'Laufzeit',
         loan_purpose: 'Kreditzweck',
         nominal_interest_rate: 'Sollzinssatz',
@@ -155,7 +155,7 @@ export default {
             academic_title: 'Akademischer Titel',
             nationality: 'Staatsbürgerschaft',
             date_of_birth: 'Geburtsdatum',
-            current_address: 'Aktueller Wohnsitz',
+            current_address: 'Aktueller Hauptwohnsitz',
             zip_code: 'Postleitzahl',
             city: 'Ort',
             street_address: 'Straße',

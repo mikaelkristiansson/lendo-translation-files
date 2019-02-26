@@ -244,7 +244,7 @@ export default {
         my_information: 'Meine Informationen',
         additional_reqs_from_bank:
             'Bitte die letzten 3 Gehaltszettel oder den Pensionsbescheid hochladen (Dateien können einzeln oder gesammelt hochgeladen werden).',
-        fill_out_information_below: 'Folgende Informationen werden noch benötigt',
+        fill_out_information_below: 'Eine Kreditprüfung durch die Bank erfolgt nur unter der Voraussetzung, dass alle erforderlichen Unterlagen vollständig hochgeladen wurden!',
         log_out: 'Abmelden',
         select_language: 'Sprache wählen',
         select_bankname: ({ bankName }) => `${bankName} wählen`,
@@ -252,7 +252,7 @@ export default {
         customer_support: 'Der Lendo Kundenservice steht gerne bei Fragen zur Verfügung.',
         about_lendo: 'Über Lendo',
         safety_insurance: 'Versicherung',
-        back_to_landing: 'Zurück zu Lendo.at',
+        back_to_landing: 'Zurück zur Startseite',
         details: 'Finanzierungsvorschlag (vorbehaltlich positiver Kreditentscheidung)',
         cookies: 'Cookies',
         cookies_desc:
