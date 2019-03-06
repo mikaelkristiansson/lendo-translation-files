@@ -233,7 +233,7 @@ export default {
         you_have_choosen: ({ bankName }) => `Du hast dich für einen Kredit bei ${bankName} entschieden`,
         add_after: 'Folgende Zusatzleistungen können später noch ausgewählt werden',
         acceptance_url:
-            'Um den Antrag fertigzustellen, klicken Sie auf das untenstehende Feld und folgen Sie den Antragsprozessschritten. Bitte beachten Sie, dass der Kreditantrag mit den angebotenen Konditionen nur einmal durchgeführt werden kann.',
+            'Klicken Sie bitte auf den Button um den Prozess im Portal der Erste Bank und Sparkasse abzuschließen.',
         finalize_application_button: 'Kreditanfrage fertigstellen',
     },
     ui: {
