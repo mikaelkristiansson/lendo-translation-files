@@ -177,7 +177,7 @@ export default {
             placeholder: 'Wählen Sie bitte eine Art der Legitimierung',
             option: {
                 customer_visits_bank: 'in einer Filiale',
-                bank_contacts_customer: 'via InternetBanking (nur für Bank Austria Kunden)',
+                bank_contacts_customer: 'via InternetBanking (nur für Bank Austria Kunden mit InternetBanking)',
                 post_identification: 'per PostIdent-Brief',
             },
         },
