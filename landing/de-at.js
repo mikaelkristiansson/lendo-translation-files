@@ -68,7 +68,7 @@ export default {
             },
             verify: {
                 title: "Ihr Verifizierungscode wurde nicht erkannt",
-                content: "Bitte stellen Sie sicher, dass Sie den Code korrekt eingegeben haben. Haben Sie keinen Code bekommen, oder wurde dieser nicht erkannt, bitte fordern sie einen neuen Code an."
+                content: "Bitte stellen Sie sicher, dass Sie den Code korrekt eingegeben haben. Haben Sie keinen Code bekommen, oder wurde dieser nicht erkannt, fordern Sie bitte einen neuen Code an."
             }
         },
         sent: {
