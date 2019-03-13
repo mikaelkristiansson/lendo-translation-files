@@ -72,7 +72,7 @@ export default {
             }
         },
         sent: {
-            title: "Ein Verifizierungscode wurde an ihre angegebene Telefonnummer gesandt.",
+            title: "Ein Verifizierungscode wurde an Ihre angegebene Telefonnummer gesandt.",
             per_du: {
                 content: "Wir haben dir einen Verifizierungscode geschickt. Bitte gib diesen hier ein."
             },
