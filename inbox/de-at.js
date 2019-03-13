@@ -68,7 +68,7 @@ export default {
             [ApplicationsConstants.STATUSES.APPROVED]: 'Dein Antrag wird bearbeitet',
             [ApplicationsConstants.STATUSES.PRODUCTS_RESPONDED]: 'Dein Antrag wurde bearbeitet',
             [ApplicationsConstants.STATUSES.DENIED]: 'Dein Antrag wurde bearbeitet',
-            RESPONSES_EXPIRED: 'Dein Antrag wurde bearbeitet',
+            RESPONSES_EXPIRED: 'Das Angebot ist abgelaufen',
         },
         missing_application: {
             header: 'Kreditanfrage stellen',
