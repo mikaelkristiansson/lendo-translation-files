@@ -76,8 +76,8 @@ export default {
                 'Um Kreditangebote zu bekommen muss eine Kreditanfrage gestellt werden. Button unten klicken, um Kreditanfrage zu vervollständigen.',
             button: 'Kreditanfrage stellen',
         },
-        all_expired: 'Deine Kreditangebote sind abgelaufen. Um eine neuen Kreditanfrage zu stellen',
-        press_here: 'klicke hier',
+        all_expired: 'Deine Kreditangebote sind abgelaufen. Um eine neue Kreditanfrage zu stellen',
+        press_here: 'bitte hier klicken',
     },
     offer: {
         fee: {

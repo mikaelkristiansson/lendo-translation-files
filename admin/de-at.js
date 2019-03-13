@@ -57,7 +57,7 @@ export default {
             withdraw_before_new_offer:
                 'Das aktive Angebot muss zurückgezogen werden, bevor ein neues Angebot abgegeben werden kann',
             application_denied_cannot_leave_offer:
-                'Sie haben den Antrag bereits abgelehnt und können die aktuelle Überarbeitung nicht ändern',
+                'Sie haben den Antrag bereits abgelehnt und können keine Überarbeitung mehr durchführen',
             loan_details: {
                 finalize_acceptance_url: 'URL für die letzten Schritte',
                 header: 'Kreditdetails' // Loan details

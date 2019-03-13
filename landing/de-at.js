@@ -72,12 +72,12 @@ export default {
             }
         },
         sent: {
-            title: "Ein Verifizierungscode wurde an ihr Telefon gesandt.",
+            title: "Ein Verifizierungscode wurde an ihre angegebene Telefonnummer gesandt.",
             per_du: {
-                content: "Wir haben Ihnen einen Bestätigungscode geschickt. Bitte geben Sie diesen hier ein."
+                content: "Wir haben dir einen Verifizierungscode geschickt. Bitte gib diesen hier ein."
             },
             per_sie: {
-                content: "Wir haben dir einen Bestätigungscode geschickt. Bitte gib diesen hier ein."
+                content: "Wir haben Ihnen einen Verifizierungscode geschickt. Bitte geben Sie diesen hier ein."
             },
         }
     },
