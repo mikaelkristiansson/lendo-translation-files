@@ -139,7 +139,7 @@ export default {
         },
         // no_offer_header: 'Du hast derzeit keine Angebote',
         // no_offer_desc: 'Wenn ein Angebot einlangt, wird es hier angezeigt.',
-        effective_interest: 'Effective interest',
+        effective_interest: 'Effektivzinssatz p.a.',
         signing_complement: 'When signing the debenture the bank want wants you to attach the following',
         annuity_text: {
             header: 'Annuity',
