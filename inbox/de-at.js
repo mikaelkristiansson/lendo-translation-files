@@ -168,9 +168,13 @@ export default {
         payslip: {
             label: ({ number }) => `Gehaltszettel #${number} bzw. Pensionsbescheid`,
             add_field_button: 'Weiteren Gehaltszettel hochladen',
+            remove_field_button: 'Remove field',
         },
         copy_of_id: {
             label: 'Kopie von Reisepass oder Personalausweis (Vorder- und Rückseite)',
+        },
+        copy_of_bank_card: {
+            label: 'Kopie der Maestro-/Bankomatkarte',
         },
         signing_method: {
             label: 'Art der Legitimierung',
@@ -201,6 +205,12 @@ export default {
                     'Den unterzeichneten Kreditantrag kannst du dann gesichert im Tool der Santander Consumer Bank ganz einfach als Foto oder Scan hochladen.',
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
                 ],
+                tf_bank: [
+                    'Nach Prüfung deiner eingereichten Dokumente (ID, die letzten 3 Gehaltsnachweise) erhälts du den Kreditvertrag per Post zugestellt. Bitte sende uns diesen unterschrieben auf dem Postweg zurück.',
+                    'Zusätzlich benötigen wir zur Verifizierung deines Bankkontos eine Testüberweisung von 0,01€ an die folgende Bankverbindung:',
+                    'IBAN: DE34512202000070508206, BIC: ESSEDEFFXXX, Verwendungszweck: Vor- und Nachname',
+                    'Sobald wir deinen unterschriebenen Kreditvertrag erhalten und du dein Bankkonto durch die Überweisung von 0,01€ verifiziert hast, wird die Kreditsumme ausgezahlt.',
+                ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
@@ -222,6 +232,12 @@ export default {
                     'Ein Mitarbeiter der Santander Consumer Bank wird Sie so schnell wie möglich kontaktieren.',
                     'Den unterzeichneten Kreditantrag können Sie dann gesichert im Tool der Santander Consumer Bank ganz einfach als Foto oder Scan hochladen.',
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
+                ],
+                tf_bank: [
+                    'Nach Prüfung Ihrer eingereichten Dokumente (ID, die letzten 3 Gehaltsnachweise) erhalten Sie den Kreditvertrag per Post zugestellt. Bitte senden Sie uns diesen unterschrieben auf dem Postweg zurück.',
+                    'Zusätzlich benötigen wir zur Verifizierung Ihres Bankkontos eine Testüberweisung von 0,01€ an die folgende Bankverbindung:',
+                    'IBAN: DE34512202000070508206, BIC: ESSEDEFFXXX, Verwendungszweck: Vor- und Nachname',
+                    'Sobald wir Ihren unterschriebenen Kreditvertrag erhalten und Sie Ihr Bankkonto durch die Überweisung von 0,01€ verifiziert haben, wird die Kreditsumme ausgezahlt.',
                 ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhalten Sie eine E-Mail von ${bankName} an Ihre E-Mail-Adresse mit weiteren Informationen zu Ihrem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelen Sie bitte an die Bank.`,
