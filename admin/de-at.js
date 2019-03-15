@@ -50,6 +50,7 @@ export default {
         no_content: 'Kein Ergebnis'
     },
     treat: {
+        skipped_credit_check_with_comment: 'This application skipped the credit check with the following comment',
         revision_history: 'Versionsgeschichte',
         application_created: 'Antrag erstellt am',
         form: {
