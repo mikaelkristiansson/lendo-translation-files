@@ -369,5 +369,13 @@ export default {
             ROLE_PARTNERAPI_USER: 'Partner Api',
             ROLE_PARTNER_USER: 'Partner'
         }
+    },
+    logs: {
+        filterOptions: {
+            partner: 'Partner',
+            system: 'System',
+            user: 'Kunde',
+            admin: 'Customer Service'
+        }
     }
 };
