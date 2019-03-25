@@ -59,6 +59,8 @@ export default {
                 'Das aktive Angebot muss zurückgezogen werden, bevor ein neues Angebot abgegeben werden kann',
             application_denied_cannot_leave_offer:
                 'Sie haben den Antrag bereits abgelehnt und können keine Überarbeitung mehr durchführen',
+            application_locked_by_other_user:
+                'Diese Anwendung ist von einem anderen Benutzer gesperrt',
             loan_details: {
                 finalize_acceptance_url: 'URL für die letzten Schritte',
                 header: 'Kreditdetails' // Loan details
@@ -139,7 +141,12 @@ export default {
             denial: 'Abgelehnt',
             request_co_applicant: '2.Kreditnehmer beantragen'
         },
-        view_button: 'Anzeigen'
+        view_button: 'Anzeigen',
+        lock_messages: {
+            locked_to_current_user: 'This application is locked to you',
+            locked_to_other_user: 'Locked by',
+            unlocked: 'This application is not locked'
+        }
     },
     application_form: {
         button: {
