@@ -168,7 +168,7 @@ export default {
         payslip: {
             label: ({ number }) => `Gehaltszettel #${number} bzw. Pensionsbescheid`,
             add_field_button: 'Weiteren Gehaltszettel hochladen',
-            remove_field_button: 'Remove field',
+            remove_field_button: 'Feld entfernen',
         },
         copy_of_id: {
             label: 'Kopie von Reisepass oder Personalausweis (Vorder- und Rückseite)',
@@ -249,7 +249,7 @@ export default {
         you_have_choosen: ({ bankName }) => `Du hast dich für einen Kredit bei ${bankName} entschieden`,
         add_after: 'Folgende Zusatzleistungen können später noch ausgewählt werden',
         acceptance_url:
-            'Klicken Sie bitte auf den Button um den Prozess im Portal der Erste Bank und Sparkasse abzuschließen.',
+            'Klicken Sie bitte auf den Button um den Prozess im Portal unseres Partners abzuschließen.',
         finalize_application_button: 'Kreditanfrage fertigstellen',
     },
     ui: {
