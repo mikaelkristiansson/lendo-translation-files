@@ -225,7 +225,7 @@ export default {
             data_privacy: (
                 <p style={{ margin: '0' }}>
                     Ich habe die <a href="/datenschutz/datenschutzerklaerung">Datenschutzerklärung</a> gelesen und
-                    akzeptiert.
+                    verstanden.
                 </p>
             ),
             austrian_citizen_one_year: 'Ich habe meinen Hauptwohnsitz seit mindestens 1 Jahr in Österreich',
