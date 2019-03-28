@@ -89,6 +89,7 @@ export default {
             monthly_cost: 'Monatliche Rate',
             monthly_cost_first: 'Monatliche Rate',
             monthly_cost_last: 'Letzte Monatliche Rate',
+            monthly_cost_last_short: 'Letzte Rate',
             monthly_cost_average: 'Durchschnittliche monatliche Rate',
             short: {
                 monthly_cost: 'Rate',
@@ -211,6 +212,24 @@ export default {
                     'IBAN: DE34512202000070508206, BIC: ESSEDEFFXXX, Verwendungszweck: Vor- und Nachname',
                     'Sobald wir deinen unterschriebenen Kreditvertrag erhalten und du dein Bankkonto durch die Überweisung von 0,01€ verifiziert hast, wird die Kreditsumme ausgezahlt.',
                 ],
+                erste_bank: [
+                    'Bitte nimm dir noch 15 Minuten Zeit um den Antrag fertigzustellen. Der Kreditantrag kann mit den angebotenen Konditionen nur einmal durchgeführt werden. Mit Klick auf den untenstehenden Button wirst du direkt auf das Erste Bank Portal weitergeleitet um die restlichen Schritte zu erledigen:',
+                    <p>
+                        {' '}
+                        - Überprüfung deiner Angaben und des IBANs deines Auszahlungskontos <br />
+                        - Hochladen deiner Ausweisdokumente <br />
+                        - Zeichnung des Kreditvertrags mittels SMS Code (den Vertrag erhältst du per Email)
+                        <br />
+                        - Hochladen deiner Einkommensnachweise der letzten 3 Monate <br />- Identitätsprüfung per Video-
+                        oder EPS-Legitimierung{' '}
+                    </p>,
+                    'Nach positiver, finaler Prüfung durch die Erste Bank und Sparkasse wird dein Kreditbetrag auf dein angegebenes Konto ausbezahlt. Die Auszahlung erfolgt an Bankwerktagen binnen 24 Stunden. Du erhältst zusätzlich dazu eine Bestätigungs-Email. Bei Fragen wende dich an den Lendo Kundenservice.',
+                ],
+                cashpresso: [
+                    'Nach Klick auf den untenstehenden Button wirst du auf das cashpresso Portal weitergeleitet um deinen Antrag fertigzustellen.',
+                    'Halte bitte folgenden Dokumente und Information bereit: Reisepass oder Personalausweis, IBAN deines Bankkontos.',
+                    'Nach positiver Prüfung deiner Unterlagen kann der Betrag auf dein Konto ausgezahlt werden.',
+                ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
@@ -238,6 +257,25 @@ export default {
                     'Zusätzlich benötigen wir zur Verifizierung Ihres Bankkontos eine Testüberweisung von 0,01€ an die folgende Bankverbindung:',
                     'IBAN: DE34512202000070508206, BIC: ESSEDEFFXXX, Verwendungszweck: Vor- und Nachname',
                     'Sobald wir Ihren unterschriebenen Kreditvertrag erhalten und Sie Ihr Bankkonto durch die Überweisung von 0,01€ verifiziert haben, wird die Kreditsumme ausgezahlt.',
+                ],
+                erste_bank: [
+                    'Bitte nehmen Sie sich noch 15 Minuten Zeit um den Antrag fertigzustellen. Der Kreditantrag kann mit den angebotenen Konditionen nur einmal durchgeführt werden. Mit Klick auf den untenstehenden Button werden Sie direkt auf das Erste Bank Portal weitergeleitet um die restlichen Schritte zu erledigen:',
+                    <p>
+                        {' '}
+                        - Überprüfung Ihrer Angaben und des IBANs Ihres Auszahlungskontos <br />
+                        - Hochladen Ihrer Ausweisdokumente
+                        <br />
+                        - Zeichnung des Kreditvertrags mittels SMS Code (den Vertrag erhalten Sie per Email)
+                        <br />
+                        - Hochladen Ihrer Einkommensnachweise der letzten 3 Monate <br />- Identitätsprüfung per Video-
+                        oder EPS-Legitimierung{' '}
+                    </p>,
+                    'Nach positiver, finaler Prüfung durch die Erste Bank und Sparkasse wird Ihr Kreditbetrag auf Ihr angegebenes Konto ausbezahlt. Die Auszahlung erfolgt an Bankwerktagen binnen 24 Stunden. Sie erhalten zusätzlich dazu eine Bestätigungs-Email. Bei Fragen wenden Sie sich an den Lendo Kundenservice.',
+                ],
+                cashpresso: [
+                    'Nach Klick auf den untenstehenden Button werden Sie auf das cashpresso Portal weitergeleitet um Ihren Antrag fertigzustellen.',
+                    'Halten Sie bitte folgenden Dokumente und Information bereit: Reisepass oder Personalausweis, IBAN Ihres Bankkontos.',
+                    'Nach positiver Prüfung Ihrer Unterlagen kann der Betrag auf Ihr Konto ausgezahlt werden.',
                 ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhalten Sie eine E-Mail von ${bankName} an Ihre E-Mail-Adresse mit weiteren Informationen zu Ihrem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelen Sie bitte an die Bank.`,
