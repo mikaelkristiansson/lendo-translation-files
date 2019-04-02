@@ -500,7 +500,7 @@ export default {
         },
         other: {
             communication_info:
-                'Mit der Eintragung einer E-Mailadresse und Telefonnummer erkläre ich mich damit einverstanden, Informationen mit Lendo und Lendos Kooperationspartner via E-Mail/Telefon auszutauschen.',
+                'Mit der Eintragung einer E-Mailadresse und Telefonnummer erkläre ich mich damit einverstanden, Informationen mit Lendo und Lendos Kooperationspartner via E-Mail und/oder Telefon auszutauschen.',
         },
     },
 };

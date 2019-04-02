@@ -143,9 +143,9 @@ export default {
         },
         view_button: 'Anzeigen',
         lock_messages: {
-            locked_to_current_user: 'This application is locked to you',
-            locked_to_other_user: 'Locked by',
-            unlocked: 'This application is not locked'
+            locked_to_current_user: 'Dieser Antrag ist von Ihnen gesperrt',
+            locked_to_other_user: 'Gesperrt von',
+            unlocked: 'Dieser Antrag ist nicht gesperrt'
         }
     },
     application_form: {
