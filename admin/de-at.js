@@ -75,6 +75,12 @@ export default {
             button: {
                 leave_offer: 'Abgeben',
                 deny: 'Ablehnen'
+            },
+            confirm_button: {
+                abort: 'Abbrechen',
+                confirm: 'Bestätigen',
+                title: 'Bestätigen Sie die Ablehnung',
+                info: 'Wenn Sie den Antrag ablehnen, können Sie ihn nicht mehr sehen und bearbeiten.'
             }
         },
         steps: {
