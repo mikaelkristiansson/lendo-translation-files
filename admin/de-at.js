@@ -83,6 +83,15 @@ export default {
                 info: 'Wenn Sie den Antrag ablehnen, können Sie ihn nicht mehr sehen und bearbeiten.'
             }
         },
+        deny: {
+            credit_not_sufficient: 'Bonität nicht ausreichend',
+            documents: 'Unterlagen',
+            fraud: 'Fraud',
+            customer_never_reached: 'Kunde nie erreicht/nicht wieder erreicht',
+            customer_no_interest: 'Kein Interesse von Seiten des Kunden',
+            customer_foreign_account: 'Kunde handelt auf fremde Rechnung',
+            double_request: 'Doppelte Anfrage'
+        },
         steps: {
             untreated: {
                 title: 'Unbearbeitet',
