@@ -43,6 +43,11 @@ export default {
         verify_otp_button: 'Überprüfen',
         submit_button: 'Anmelden',
         resend_otp_button: 'Neuen Verifizierungscode senden',
+        error: {
+            404: 'Could not generate OTP',
+            401: 'You are unauthorized to access the page, please try log in again',
+            400: 'Could not read JWT-token',
+        },
     },
     otp: {
         sent: {
