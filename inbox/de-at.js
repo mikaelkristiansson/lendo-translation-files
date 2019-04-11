@@ -44,9 +44,9 @@ export default {
         submit_button: 'Anmelden',
         resend_otp_button: 'Neuen Verifizierungscode senden',
         error: {
-            404: 'Could not generate OTP',
-            401: 'You are unauthorized to access the page, please try log in again',
-            400: 'Could not read JWT-token',
+            404: 'Verifizierungscode konnte nicht erstellt werden',
+            401: 'Die Seite konnte nicht geöffnet werden. Bitte versuchen Sie es nocheinmal.',
+            400: 'Der Verifizierungscode wurde nicht erkannt',
         },
     },
     otp: {

@@ -79,12 +79,12 @@ export default {
             },
         },
         sent: {
-            title: 'Ein Verifizierungscode wurde an die angegebene Telefonnummer gesandt.',
+            title: 'Bestätigung der angegebenen Telefonnummer benötigt!',
             per_du: {
-                content: 'Wir haben dir einen Verifizierungscode geschickt. Bitte gib diesen hier ein.',
+                content: 'Wir haben dir einen Verifizierungscode an deine Telefonnummer per SMS geschickt. Bitte gib diesen hier ein.',
             },
             per_sie: {
-                content: 'Wir haben Ihnen einen Verifizierungscode geschickt. Bitte geben Sie diesen hier ein.',
+                content: 'Wir haben Ihnen einen Verifizierungscode an Ihre Telefonnummer per SMS geschickt. Bitte geben Sie diesen hier ein.',
             },
         },
     },
