@@ -184,7 +184,7 @@ export default {
         },
         signing_method: {
             label: 'Art der Legitimierung',
-            placeholder: 'Wählen Sie bitte eine Art der Legitimierung',
+            placeholder: 'Bitte eine Art der Legitimierung auswählen',
             option: {
                 customer_visits_bank: 'in einer Filiale',
                 bank_contacts_customer: 'via InternetBanking (nur für Bank Austria Kunden mit InternetBanking)',
@@ -289,10 +289,10 @@ export default {
                 ],
             },
         },
-        you_have_choosen: ({ bankName }) => `Du hast dich für einen Kredit bei ${bankName} entschieden`,
+        you_have_choosen: ({ bankName }) => `Der Finanzierungsvorschlag von ${bankName} wurde ausgewählt`,
         add_after: 'Folgende Zusatzleistungen können später noch ausgewählt werden',
         acceptance_url:
-            'Klicken Sie bitte auf den Button um den Prozess im Portal unseres Partners abzuschließen.',
+            'Bitte auf den Button klicken, um den Prozess im Portal unseres Partners abzuschließen.',
         finalize_application_button: 'Kreditanfrage fertigstellen',
     },
     ui: {
