@@ -47,20 +47,37 @@ export default {
         yes: 'Ja',
         no: 'Nein',
         more_info: 'Weitere Informationen',
-        no_content: 'Kein Ergebnis'
+        no_content: 'Kein Ergebnis',
+        abort: 'Abbrechen',
+        confirm: 'Bestätigen',
+        confirmation_title: 'Bitte bestätigen Sie die ausgewählte Aktion'
     },
     treat: {
         skipped_credit_check_with_comment: 'Dieser Antrag wurde manuell geprüft (kein KSV Eintrag gefunden)',
         revision_history: 'Versionsgeschichte',
         application_created: 'Antrag erstellt am',
+        deny: {
+            deny_reason: {
+                credit_not_sufficient: 'Bonität nicht ausreichend',
+                documents: 'Unterlagen',
+                fraud: 'Fraud',
+                customer_never_reached: 'Kunde nie erreicht/nicht wieder erreicht',
+                customer_no_interest: 'Kein Interesse von Seiten des Kunden',
+                customer_foreign_account: 'Kunde handelt auf fremde Rechnung',
+                double_request: 'Doppelte Anfrage'
+            },
+            confirm_button: {
+                title: 'Bestätigen Sie die Ablehnung',
+                info: 'Wenn Sie den Antrag ablehnen, können Sie ihn nicht mehr sehen und bearbeiten.'
+            }
+        },
         form: {
             form_prefilled_from_settings: 'Das Formular ist bereits mit den Produkteinstellungen gefüllt', // The form is prefilled with the product's settings
             withdraw_before_new_offer:
                 'Das aktive Angebot muss zurückgezogen werden, bevor ein neues Angebot abgegeben werden kann',
             application_denied_cannot_leave_offer:
                 'Sie haben den Antrag bereits abgelehnt und können keine Überarbeitung mehr durchführen',
-            application_locked_by_other_user:
-                'Diese Anwendung ist von einem anderen Benutzer gesperrt',
+            application_locked_by_other_user: 'Diese Anwendung ist von einem anderen Benutzer gesperrt',
             loan_details: {
                 finalize_acceptance_url: 'URL für die letzten Schritte',
                 header: 'Kreditdetails' // Loan details
@@ -69,28 +86,14 @@ export default {
                 header: 'Preise und Gebühren',
                 visible_to_customer: 'Sichtbar für den Kunden'
             },
+
             complements: {
                 header: ''
             },
             button: {
                 leave_offer: 'Abgeben',
                 deny: 'Ablehnen'
-            },
-            confirm_button: {
-                abort: 'Abbrechen',
-                confirm: 'Bestätigen',
-                title: 'Bestätigen Sie die Ablehnung',
-                info: 'Wenn Sie den Antrag ablehnen, können Sie ihn nicht mehr sehen und bearbeiten.'
             }
-        },
-        deny: {
-            credit_not_sufficient: 'Bonität nicht ausreichend',
-            documents: 'Unterlagen',
-            fraud: 'Fraud',
-            customer_never_reached: 'Kunde nie erreicht/nicht wieder erreicht',
-            customer_no_interest: 'Kein Interesse von Seiten des Kunden',
-            customer_foreign_account: 'Kunde handelt auf fremde Rechnung',
-            double_request: 'Doppelte Anfrage'
         },
         steps: {
             untreated: {
@@ -157,7 +160,7 @@ export default {
             request_co_applicant: '2.Kreditnehmer beantragen'
         },
         view_button: 'Anzeigen',
-        lock_messages: {
+        lock_messages: {
             locked_to_current_user: 'Dieser Antrag ist von Ihnen gesperrt',
             locked_to_other_user: 'Gesperrt von',
             unlocked: 'Dieser Antrag ist nicht gesperrt'
@@ -373,6 +376,17 @@ export default {
         missing_search_query: 'Keine Suchanfrage vorhanden, bitte die Suchbox oben benutzen'
     },
     user: {
+        confirm_button:{
+            delete: {
+                info: 'Sind Sie sicher, dass der Benutzer gelöscht werden soll?'
+            },
+            block: {
+                info: 'Sind Sie sicher, dass der Benutzer gesperrt werden soll? Er kann sich dann nicht mehr einloggen.'
+            },
+            unblock: {
+                info: 'Sind Sie sicher, dass der Benutzer entsperrt werden soll?'
+            }
+        },
         role: {
             ROLE_ADMIN_ADMIN: 'Admin',
             ROLE_ADMIN_CUSTOMER_SALES: 'Customer Sales',
