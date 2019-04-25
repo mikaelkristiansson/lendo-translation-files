@@ -207,7 +207,7 @@ export default {
                     'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
                 ],
                 santander: [
-                    'Ein Mitarbeiter der Santander Consumer Bank wird dich so schnell wie möglich kontaktieren',
+                    'Ein Mitarbeiter der Santander Consumer Bank wird dich so schnell wie möglich kontaktieren und ein telefonisches Beratungsgespräch mit dir vereinbaren bei dem du alle erforderlichen Informationen erhältst."',
                     'Den unterzeichneten Kreditantrag kannst du dann gesichert im Tool der Santander Consumer Bank ganz einfach als Foto oder Scan hochladen.',
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
                 ],
@@ -253,7 +253,7 @@ export default {
                     'Nach positiver Prüfung erfolgt die Auszahlung innerhalb weniger Werktage direkt auf das angegebene Girokonto.',
                 ],
                 santander: [
-                    'Ein Mitarbeiter der Santander Consumer Bank wird Sie so schnell wie möglich kontaktieren.',
+                    'Ein Mitarbeiter der Santander Consumer Bank wird Sie so schnell wie möglich kontaktieren und ein telefonisches Beratungsgespräch mit Ihnen vereinbaren bei dem Sie alle erforderlichen Informationen erhalten.',
                     'Den unterzeichneten Kreditantrag können Sie dann gesichert im Tool der Santander Consumer Bank ganz einfach als Foto oder Scan hochladen.',
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Auszahlung auf das angegebene Bankkonto.',
                 ],
