@@ -79,7 +79,7 @@ export default {
             },
         },
         sent: {
-            title: 'Bestätigung der angegebenen Telefonnummer benötigt!',
+            title: 'Ein Verifizierungscode wurde an die angegebene Telefonnummer gesandt.',
             per_du: {
                 content: 'Wir haben dir einen Verifizierungscode an deine Telefonnummer per SMS geschickt. Bitte gib diesen hier ein.',
             },
@@ -110,7 +110,7 @@ export default {
             apply: {
                 initial: 'Weiter',
                 next_step: 'Weiter',
-                finish: 'Fertig!',
+                finish: 'Zur Bestätigung',
             },
         },
         submit_state: {
@@ -127,7 +127,7 @@ export default {
                 text: 'Senden',
             },
             success: {
-                text: 'Vielen Dank für Ihre Kreditanfrage!',
+                text: 'Bestätigung der Telefonnummer notwendig! Bitte den gerade zugeschickten 6-stelligen Verifizierungscode unten in das Feld eingeben.',
                 verify_button: 'Abschicken',
                 resend_otp_button: 'Ich habe keinen Verifizierungscode erhalten. Neuen Code anfordern.',
                 resend_otp_triggered: 'Ein neuer Verifizierungscode wurde verschickt.',
