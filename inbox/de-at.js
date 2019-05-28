@@ -180,7 +180,7 @@ export default {
             label: 'Kopie von Reisepass oder Personalausweis (Vorder- und Rückseite)',
         },
         copy_of_bank_card: {
-            label: 'Kopie der Maestro-/Bankomatkarte',
+            label: 'Kopie der Maestro-/Bankomatkarte (Name und IBAN müssen sichtbar sein)',
         },
         signing_method: {
             label: 'Art der Legitimierung',

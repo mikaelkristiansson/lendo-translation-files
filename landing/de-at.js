@@ -127,7 +127,7 @@ export default {
                 text: 'Senden',
             },
             success: {
-                text: 'Bestätigung der Telefonnummer notwendig! Bitte den gerade zugeschickten 6-stelligen Verifizierungscode unten in das Feld eingeben.',
+                text: 'Bestätigung der Telefonnummer notwendig! Bitte den gerade zugeschickten 6-stelligen SMS Verifizierungscode unten in das Feld eingeben.',
                 verify_button: 'Abschicken',
                 resend_otp_button: 'Ich habe keinen Verifizierungscode erhalten. Neuen Code anfordern.',
                 resend_otp_triggered: 'Ein neuer Verifizierungscode wurde verschickt.',
