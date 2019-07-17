@@ -283,7 +283,7 @@ export default {
                     'Nach positiver Prüfung Ihrer Unterlagen kann der Betrag auf Ihr Konto ausgezahlt werden.',
                 ],
                 default: ({ bankName }) => [
-                    `Innerhalb von 24 Stunden erhalten Sie eine E-Mail von ${bankName} an Ihre E-Mail-Adresse mit weiteren Informationen zu Ihrem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelen Sie bitte an die Bank.`,
+                    `Innerhalb von 24 Stunden erhalten Sie eine E-Mail von ${bankName} an Ihre E-Mail-Adresse mit weiteren Informationen zu Ihrem Kreditangebot. Den unterzeichneten Kreditvertrag übermitteln Sie bitte an die Bank.`,
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
                     `Sie erhalten den gegengezeichneten Kreditvertrag von ${bankName} innerhalb weniger Tage retour.`,
                 ],

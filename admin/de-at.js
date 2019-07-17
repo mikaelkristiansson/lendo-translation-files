@@ -53,7 +53,7 @@ export default {
         confirmation_title: 'Bitte bestätigen Sie die ausgewählte Aktion'
     },
     treat: {
-        skipped_credit_check_with_comment: 'Dieser Antrag wurde manuell geprüft (kein KSV Eintrag gefunden)',
+        skipped_credit_check_with_comment: 'Dieser Antrag wurde manuell geprüft',
         revision_history: 'Versionsgeschichte',
         application_created: 'Antrag erstellt am',
         deny: {
