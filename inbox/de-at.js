@@ -235,6 +235,40 @@ export default {
                     'Halte bitte folgenden Dokumente und Information bereit: Reisepass oder Personalausweis, IBAN deines Bankkontos.',
                     'Nach positiver Prüfung deiner Unterlagen kann der Betrag auf dein Konto ausgezahlt werden.',
                 ],
+                easybank: [
+                    'In den nächsten 5 Minuten erhältst du deinen Antrag per E-Mail zugestellt. Bitte sende diesen unterschriebenen Antrag an kredit.angebot@easybank.at (oder per Post an die unten angeführte Adresse). Nach Erhalt aller Unterlagen prüfen wir deinen Antrag innerhalb eines Werktages und kontaktieren dich umgehend.',
+                    'Und verifiziere dich mithilfe deines Bankkontos über eine Überweisung von € 0,20 an die folgende Bankverbindung',
+                    <p>
+                        IBAN: AT311420020079002098
+                        <br />
+                        Verwendungszweck: Vor- und Nachname
+                    </p>,
+                ],
+                bawag: [
+                    <p>
+                        <p>
+                            Wir freuen uns, dass du dich f&uuml;r den BAWAG P.S.K. Einfach Online Kredit entschieden
+                            hast.
+                        </p>
+                        <p>
+                            &bull; Nach der Pr&uuml;fung deiner eingereichten Dokumente schicken wir dir einen Link an
+                            deine angegebene E-Mail Adresse.&nbsp;
+                            <br />
+                            &bull; &Uuml;ber diesen Link kannst du deinen Kreditantrag online auf der BAWAG P.S.K.
+                            Webseite abschlie&szlig;en.
+                        </p>
+                    </p>,
+                    <p>
+                        <p>
+                            Was ben&ouml;tigen wir noch von dir?
+                            <br />
+                            &bull; Wir ben&ouml;tigen noch eine Identit&auml;tsfeststellung und den von dir
+                            unterzeichneten Kreditvertrag. Beides kannst du online &uuml;ber den Link erledigen, den wir
+                            dir schicken.
+                        </p>
+                    </p>,
+                    'Damit wir deinen Kreditwunsch schnellstmöglich erfüllen können, vervollständige deinen Kreditantrag bitte sobald wie möglich. Wenn der Kreditantrag vollständig ist, erhältst du das Annahmeschreiben mit deiner Kreditkontonummer an dein E-Mail Adresse zugeschickt.',
+                ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhältst du eine E-Mail von ${bankName} an deine E-Mail-Adresse mit weiteren Informationen zu deinem Kreditangebot. Den unterzeichneten Kreditvertrag übermittelst du bitte an die Bank.`,
                     'Sobald die Bank alle Unterlagen und Angaben erhalten hat, erfolgt die Zahlung auf das angegebene Bankkonto.',
@@ -281,6 +315,40 @@ export default {
                     'Nach Klick auf den untenstehenden Button werden Sie auf das cashpresso Portal weitergeleitet um Ihren Antrag fertigzustellen.',
                     'Halten Sie bitte folgenden Dokumente und Information bereit: Reisepass oder Personalausweis, IBAN Ihres Bankkontos.',
                     'Nach positiver Prüfung Ihrer Unterlagen kann der Betrag auf Ihr Konto ausgezahlt werden.',
+                ],
+                easybank: [
+                    'In den nächsten 5 Minuten erhalten Sie Ihren Antrag per E-Mail zugestellt. Bitte senden Sie diesen unterschriebenen Antrag an kredit.angebot@easybank.at (oder per Post an die unten angeführte Adresse). Nach Erhalt aller Unterlagen prüfen wir Ihren Antrag innerhalb eines Werktages und kontaktieren Sie umgehend.',
+                    'Und verifizieren Sie sich mithilfe Ihres Bankkontos über eine Überweisung von € 0,20 an die folgende Bankverbindung',
+                    <p>
+                        IBAN: AT311420020079002098
+                        <br />
+                        Verwendungszweck: Vor- und Nachname
+                    </p>,
+                ],
+                bawag: [
+                    <p>
+                        <p>
+                            Wir freuen uns, dass Sie sich f&uuml;r den BAWAG P.S.K. Einfach Online Kredit entschieden
+                            haben.
+                        </p>
+                        <p>
+                            &bull; Nach der Pr&uuml;fung Ihrer eingereichten Dokumente schicken wir Ihnen einen Link an
+                            Ihre angegebene E-Mail Adresse.&nbsp;
+                            <br />
+                            &bull; &Uuml;ber diesen Link k&ouml;nnen Sie Ihren Kreditantrag online auf der BAWAG P.S.K.
+                            Webseite abschlie&szlig;en.
+                        </p>
+                    </p>,
+                    <p>
+                        <p>
+                            Was ben&ouml;tigen wir noch von Ihnen?
+                            <br />
+                            &bull; Wir ben&ouml;tigen noch eine Identit&auml;tsfeststellung und den von Ihnen
+                            unterzeichneten Kreditvertrag. Beides k&ouml;nnen Sie online &uuml;ber den Link erledigen,
+                            den wir Ihnen schicken.
+                        </p>
+                    </p>,
+                    'Damit wir Ihren Kreditwunsch schnellstmöglich erfüllen können, vervollständigen Sie Ihren Kreditantrag bitte sobald wie möglich. Wenn der Kreditantrag vollständig ist, erhalten Sie das Annahmeschreiben mit Ihrer Kreditkontonummer an Ihre E-Mail Adresse zugeschickt.',
                 ],
                 default: ({ bankName }) => [
                     `Innerhalb von 24 Stunden erhalten Sie eine E-Mail von ${bankName} an Ihre E-Mail-Adresse mit weiteren Informationen zu Ihrem Kreditangebot. Den unterzeichneten Kreditvertrag übermitteln Sie bitte an die Bank.`,
